@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Ainet" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+    </style>
+
+</resources>

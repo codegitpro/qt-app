@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Blomp</string>
+    <string name="upload">Upload</string>
+    <string name="pick_image_intent_text">Choose a Photo</string>
+</resources>

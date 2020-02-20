@@ -1,0 +1,1925 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2004D4FF22BFB7910057D8B4 /* AITransactionDetail.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2004D4FC22BFB7900057D8B4 /* AITransactionDetail.mm */; };
+		2004D50022BFB7910057D8B4 /* AITransactionDetail+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2004D4FD22BFB7900057D8B4 /* AITransactionDetail+Private.mm */; };
+		2013440C2247A0C20032C70E /* BCCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2013440A2247A0C20032C70E /* BCCKeychain.m */; };
+		2014245522B3F6BB00920278 /* AIFolderViewmodel+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2014244F22B3F6BA00920278 /* AIFolderViewmodel+Private.mm */; };
+		2014245622B3F6BB00920278 /* AIFormViewmodel+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2014245422B3F6BB00920278 /* AIFormViewmodel+Private.mm */; };
+		2014245A22B3F6CC00920278 /* AIRootViewmodel+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2014245922B3F6CC00920278 /* AIRootViewmodel+Private.mm */; };
+		201F762122A3A6140079BAEA /* AIView+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 201F761E22A3A6130079BAEA /* AIView+Private.mm */; };
+		2024D62A22A29AD80041FEF8 /* AIReference+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2024D60722A29AD60041FEF8 /* AIReference+Private.mm */; };
+		2024D62B22A29AD80041FEF8 /* AIStyle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2024D61322A29AD60041FEF8 /* AIStyle.mm */; };
+		2024D62C22A29AD80041FEF8 /* AIField.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2024D61422A29AD60041FEF8 /* AIField.mm */; };
+		2024D62E22A29AD80041FEF8 /* AIBlock.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2024D61A22A29AD70041FEF8 /* AIBlock.mm */; };
+		2024D62F22A29AD80041FEF8 /* AIStyle+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2024D61B22A29AD70041FEF8 /* AIStyle+Private.mm */; };
+		2024D63022A29AD80041FEF8 /* AIReference.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2024D62122A29AD70041FEF8 /* AIReference.mm */; };
+		2024D63122A29AD80041FEF8 /* AIField+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2024D62622A29AD80041FEF8 /* AIField+Private.mm */; };
+		2024D63222A29AD80041FEF8 /* AIBlock+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2024D62722A29AD80041FEF8 /* AIBlock+Private.mm */; };
+		2024D63322A29AD80041FEF8 /* AIGenericForm+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2024D62922A29AD80041FEF8 /* AIGenericForm+Private.mm */; };
+		202D2AE321D5FE9800ECAE6C /* AIAccountScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 202D2AE221D5FE9800ECAE6C /* AIAccountScreen.m */; };
+		202D3E9C22B82524007C5828 /* user_viewmodel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 202D3E9B22B82524007C5828 /* user_viewmodel.cpp */; };
+		202D3E9F22B83C87007C5828 /* blomp_session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 202D3E9E22B83C87007C5828 /* blomp_session.cpp */; };
+		202D3EA222B854EA007C5828 /* AICertCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 202D3EA122B854EA007C5828 /* AICertCheck.m */; };
+		20395A1E22A3A9B500E4E156 /* AIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20395A1D22A3A9B500E4E156 /* AIViewController.m */; };
+		203A5240211754D200893D6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 203A523F211754D200893D6A /* AppDelegate.m */; };
+		203A5248211754D200893D6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 203A5247211754D200893D6A /* Assets.xcassets */; };
+		203A524B211754D200893D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203A5249211754D200893D6A /* LaunchScreen.storyboard */; };
+		203A524E211754D200893D6A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 203A524D211754D200893D6A /* main.mm */; };
+		203D38CE22A2A3B7000AF408 /* AIHelpElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38C022A2A3B6000AF408 /* AIHelpElement.m */; };
+		203D38CF22A2A3B7000AF408 /* AIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38C422A2A3B6000AF408 /* AIButton.m */; };
+		203D38D122A2A3B7000AF408 /* AIBooleanInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38C922A2A3B7000AF408 /* AIBooleanInput.m */; };
+		203D38D222A2A3B7000AF408 /* AIPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38CA22A2A3B7000AF408 /* AIPicker.m */; };
+		203D38D322A2A3B7000AF408 /* AIText.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38CB22A2A3B7000AF408 /* AIText.m */; };
+		203D38D422A2A3B7000AF408 /* AIMultilineTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38CC22A2A3B7000AF408 /* AIMultilineTextInput.m */; };
+		203D38F122A2A3CF000AF408 /* AIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38D522A2A3CE000AF408 /* AIImage.m */; };
+		203D38F222A2A3CF000AF408 /* AIBaseForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38D722A2A3CE000AF408 /* AIBaseForm.m */; };
+		203D38F322A2A3CF000AF408 /* AIPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38D822A2A3CE000AF408 /* AIPickerController.m */; };
+		203D38F422A2A3CF000AF408 /* AIBaseFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38DA22A2A3CE000AF408 /* AIBaseFormViewController.m */; };
+		203D38F522A2A3CF000AF408 /* AIHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38DD22A2A3CE000AF408 /* AIHelp.m */; };
+		203D38F722A2A3CF000AF408 /* AIMultilineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38E222A2A3CE000AF408 /* AIMultilineButton.m */; };
+		203D38F822A2A3CF000AF408 /* AIConfirmController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38E322A2A3CE000AF408 /* AIConfirmController.m */; };
+		203D38F922A2A3CF000AF408 /* AIStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38E822A2A3CF000AF408 /* AIStarRatingView.m */; };
+		203D38FB22A2A3CF000AF408 /* AITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38EB22A2A3CF000AF408 /* AITextField.m */; };
+		203D38FD22A2A3CF000AF408 /* AIVerticalSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38EE22A2A3CF000AF408 /* AIVerticalSpace.m */; };
+		203D38FE22A2A3CF000AF408 /* AIPhoneFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D38EF22A2A3CF000AF408 /* AIPhoneFormController.m */; };
+		203D701B21CA894200EBB2D3 /* AIBooleanInputx.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D701A21CA894200EBB2D3 /* AIBooleanInputx.m */; };
+		203DFCF222B6573600CAB3C7 /* AIStateChange.mm in Sources */ = {isa = PBXBuildFile; fileRef = 203DFCEE22B6573600CAB3C7 /* AIStateChange.mm */; };
+		203DFCF322B6573600CAB3C7 /* AIStateChange+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 203DFCEF22B6573600CAB3C7 /* AIStateChange+Private.mm */; };
+		2045FB622118AE170047E339 /* DJIError.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2045FB5C2118AE160047E339 /* DJIError.mm */; };
+		2045FB632118AE170047E339 /* DJIProxyCaches.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2045FB612118AE170047E339 /* DJIProxyCaches.mm */; };
+		2046E082218461C0006FB9E3 /* AIVoidResult+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2046E081218461BF006FB9E3 /* AIVoidResult+Private.mm */; };
+		2046E08D218461D9006FB9E3 /* AIOsForm+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2046E084218461D7006FB9E3 /* AIOsForm+Private.mm */; };
+		2046E08E218461D9006FB9E3 /* AIOsGui+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2046E085218461D7006FB9E3 /* AIOsGui+Private.mm */; };
+		2046E08F218461D9006FB9E3 /* AIMessage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2046E08A218461D8006FB9E3 /* AIMessage.mm */; };
+		2046E090218461D9006FB9E3 /* AIMessage+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2046E08B218461D9006FB9E3 /* AIMessage+Private.mm */; };
+		2046E096218461E9006FB9E3 /* AIStringResult+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2046E095218461E8006FB9E3 /* AIStringResult+Private.mm */; };
+		2046E09F21846A2A006FB9E3 /* AILaunchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2046E09E21846A2A006FB9E3 /* AILaunchController.m */; };
+		205F61A022AD664400FE806B /* AIFolderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205F619F22AD664400FE806B /* AIFolderController.m */; };
+		2072C5F422A3C7A500D72B71 /* root_viewmodel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2072C5F322A3C7A500D72B71 /* root_viewmodel.cpp */; };
+		2077D89622A99C6E00D95DE3 /* AIRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077D89522A99C6E00D95DE3 /* AIRootController.m */; };
+		207F7423218F3E3B001546AC /* AITextFieldx.m in Sources */ = {isa = PBXBuildFile; fileRef = 207F7422218F3E3B001546AC /* AITextFieldx.m */; };
+		207F7428218F5F45001546AC /* AIButtonx.m in Sources */ = {isa = PBXBuildFile; fileRef = 207F7427218F5F45001546AC /* AIButtonx.m */; };
+		2081BA252135D37E005F9168 /* AITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 2081BA242135D37E005F9168 /* AITheme.m */; };
+		208299702247E39E00B884FD /* AIRenameFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2082996F2247E39E00B884FD /* AIRenameFile.m */; };
+		20846724215657FD007F67C0 /* AIFilesDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20846723215657FD007F67C0 /* AIFilesDetailView.m */; };
+		208D009E2206F86A0010ED7D /* AIVideoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 208D009D2206F86A0010ED7D /* AIVideoPreviewController.m */; };
+		20A2188821CBAEF800C9CF48 /* AIToolbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A2188721CBAEF800C9CF48 /* AIToolbarViewController.m */; };
+		20A4D96722A40B1300E9E1C7 /* AINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A4D96622A40B1300E9E1C7 /* AINavigationController.m */; };
+		20AC50AB21D76AFE0056C424 /* AIDirectoryList.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AC50AA21D76AFE0056C424 /* AIDirectoryList.m */; };
+		20AC50AE21D76FE70056C424 /* AIFileCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AC50AD21D76FE70056C424 /* AIFileCollectionViewCell.m */; };
+		20AC50B121D777940056C424 /* AIDirCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AC50B021D777940056C424 /* AIDirCollectionViewCell.m */; };
+		20AF381022077EE600AD8F70 /* ActionResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AF380F22077EE600AD8F70 /* ActionResult.m */; };
+		20AF38142207809500AD8F70 /* AICreateFolderScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AF38132207809500AD8F70 /* AICreateFolderScreen.m */; };
+		20B1EBB422BAC4E500CF644C /* signup_subviewmodel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20B1EBB322BAC4E500CF644C /* signup_subviewmodel.cpp */; };
+		20B52C1622B0B69200C3AF20 /* AIToolbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B52C1522B0B69200C3AF20 /* AIToolbarController.m */; };
+		20BB59B022A2AEE90025927D /* AITextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BB59AE22A2AEE90025927D /* AITextInput.m */; };
+		20BBCF9E22492C4800D27FB6 /* AIRenameFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BBCF9D22492C4800D27FB6 /* AIRenameFolder.m */; };
+		20BFCECE22B4E05500B9C5A7 /* AIFolderView+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20BFCECD22B4E05500B9C5A7 /* AIFolderView+Private.mm */; };
+		20BFCED222B4FCBB00B9C5A7 /* AIFormView+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20BFCECF22B4FCBA00B9C5A7 /* AIFormView+Private.mm */; };
+		20BFCED922B5076400B9C5A7 /* AIUiCallback+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20BFCED622B5076300B9C5A7 /* AIUiCallback+Private.mm */; };
+		20BFCEDC22B507BF00B9C5A7 /* AIUIThreadRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BFCEDB22B507BF00B9C5A7 /* AIUIThreadRunner.m */; };
+		20C0DA6422A45172000C1127 /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C0DA6322A45172000C1127 /* model.cpp */; };
+		20C9BD1922630EAB0086183C /* IQMediaPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BCAD22630EAB0086183C /* IQMediaPickerController.m */; };
+		20C9BD2E22630EAB0086183C /* IQMediaPickerSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BCE422630EAB0086183C /* IQMediaPickerSelection.m */; };
+		20C9BD2F22630EAB0086183C /* IQAudioPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BCE822630EAB0086183C /* IQAudioPickerController.m */; };
+		20C9BD3022630EAB0086183C /* IQAudioPickerController.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C9BCE922630EAB0086183C /* IQAudioPickerController.xcassets */; };
+		20C9BD3122630EAB0086183C /* IQSongsAlbumListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BCEC22630EAB0086183C /* IQSongsAlbumListViewController.m */; };
+		20C9BD3222630EAB0086183C /* IQSongsGenreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BCED22630EAB0086183C /* IQSongsGenreViewController.m */; };
+		20C9BD3322630EAB0086183C /* IQSongsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BCF022630EAB0086183C /* IQSongsListViewController.m */; };
+		20C9BD3422630EAB0086183C /* IQSongsCompilationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BCF122630EAB0086183C /* IQSongsCompilationsViewController.m */; };
+		20C9BD3522630EAB0086183C /* IQSongsListTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BCF422630EAB0086183C /* IQSongsListTableHeaderView.m */; };
+		20C9BD3622630EAB0086183C /* IQSongsPlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BCF722630EAB0086183C /* IQSongsPlaylistViewController.m */; };
+		20C9BD3722630EAB0086183C /* IQSongsArtistListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BCF822630EAB0086183C /* IQSongsArtistListViewController.m */; };
+		20C9BD3822630EAB0086183C /* IQSongsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BCFC22630EAB0086183C /* IQSongsCell.m */; };
+		20C9BD3922630EAB0086183C /* IQSongsAlbumViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BCFD22630EAB0086183C /* IQSongsAlbumViewCell.m */; };
+		20C9BD3A22630EAB0086183C /* IQSongsComposersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BCFE22630EAB0086183C /* IQSongsComposersViewController.m */; };
+		20C9BD3B22630EAB0086183C /* IQAudioPickerShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BD0122630EAB0086183C /* IQAudioPickerShadowView.m */; };
+		20C9BD3C22630EAB0086183C /* IQAudioPickerUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BD0622630EAB0086183C /* IQAudioPickerUtility.m */; };
+		20C9BD3D22630EAB0086183C /* IQAlbumAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BD0922630EAB0086183C /* IQAlbumAssetsViewController.m */; };
+		20C9BD3E22630EAB0086183C /* IQCheckmarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BD0E22630EAB0086183C /* IQCheckmarkView.m */; };
+		20C9BD3F22630EAB0086183C /* IQAssetsPickerShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BD0F22630EAB0086183C /* IQAssetsPickerShadowView.m */; };
+		20C9BD4022630EAB0086183C /* IQAssetsAlbumViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BD1322630EAB0086183C /* IQAssetsAlbumViewCell.m */; };
+		20C9BD4122630EAB0086183C /* IQAssetsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BD1422630EAB0086183C /* IQAssetsCell.m */; };
+		20C9BD4222630EAB0086183C /* IQAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BD1622630EAB0086183C /* IQAssetsPickerController.m */; };
+		20C9BD4322630EAB0086183C /* UIImage+IQMediaPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9BD1822630EAB0086183C /* UIImage+IQMediaPickerController.m */; };
+		20CD817E22B5417F0065613A /* AIPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD817D22B5417F0065613A /* AIPhotoController.m */; };
+		20CD818222B54A1E0065613A /* AIPreViewmodel+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20CD818022B54A1E0065613A /* AIPreViewmodel+Private.mm */; };
+		20CD818A22B57E1C0065613A /* AIVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD818922B57E1C0065613A /* AIVideoController.m */; };
+		20CD818D22B58B850065613A /* AITextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD818C22B58B850065613A /* AITextController.m */; };
+		20D13CC32280AFEE007F440F /* AITransactionObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D13CC22280AFEE007F440F /* AITransactionObserver.m */; };
+		20D8ECE2218DF85E00946EBE /* AIElement+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20D8ECDC218DF85D00946EBE /* AIElement+Private.mm */; };
+		20D8ECE3218DF85E00946EBE /* AIElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20D8ECE0218DF85E00946EBE /* AIElement.mm */; };
+		20D8ECE7218DF87500946EBE /* AIIntResult+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20D8ECE6218DF87500946EBE /* AIIntResult+Private.mm */; };
+		20D8ECEA218DFAC900946EBE /* AIFormViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20D8ECE9218DFAC900946EBE /* AIFormViewController.mm */; };
+		20D8ECED218E0B7200946EBE /* AIFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8ECEC218E0B7200946EBE /* AIFonts.m */; };
+		20D8ECF1218E0F8C00946EBE /* AITextInputx.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8ECF0218E0F8C00946EBE /* AITextInputx.m */; };
+		20DB5047227B64D200BEA8B0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DB5046227B64D200BEA8B0 /* StoreKit.framework */; };
+		20DE0BB2214D551A00F90AA1 /* AIGCDWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BA8214D551900F90AA1 /* AIGCDWorker.m */; };
+		20DE0BB3214D551A00F90AA1 /* AIOsIoImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BAA214D551A00F90AA1 /* AIOsIoImpl.m */; };
+		20DE0BB4214D551A00F90AA1 /* AIHttpContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BAC214D551A00F90AA1 /* AIHttpContext.m */; };
+		20DE0BB5214D551A00F90AA1 /* AIUploadContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BAD214D551A00F90AA1 /* AIUploadContext.m */; };
+		20DE0BB6214D551A00F90AA1 /* AIDownloadContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BAE214D551A00F90AA1 /* AIDownloadContext.m */; };
+		20DE0BC1214D554100F90AA1 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BB9214D554000F90AA1 /* ALView+PureLayout.m */; };
+		20DE0BC2214D554100F90AA1 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BBB214D554100F90AA1 /* NSArray+PureLayout.m */; };
+		20DE0BC3214D554100F90AA1 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BBE214D554100F90AA1 /* NSLayoutConstraint+PureLayout.m */; };
+		20DE0BD7214D556100F90AA1 /* AIFilePreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BC7214D556000F90AA1 /* AIFilePreviewController.m */; };
+		20DE0BD9214D556100F90AA1 /* AITextPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BCF214D556000F90AA1 /* AITextPreviewController.m */; };
+		20DE0BDB214D556100F90AA1 /* AIPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BD1214D556100F90AA1 /* AIPhotoPreviewController.m */; };
+		20DE0BDC214D556100F90AA1 /* AIInputFilenameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BD2214D556100F90AA1 /* AIInputFilenameViewController.m */; };
+		20DE0BDD214D556100F90AA1 /* DirectoryNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BD3214D556100F90AA1 /* DirectoryNavigationViewController.m */; };
+		20DE0BDF214D556100F90AA1 /* AIFileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BD6214D556100F90AA1 /* AIFileTableViewCell.m */; };
+		20DE0C14214D55EA00F90AA1 /* AIProgress.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BE4214D55E100F90AA1 /* AIProgress.mm */; };
+		20DE0C15214D55EA00F90AA1 /* AIFilesDetail.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BEE214D55E200F90AA1 /* AIFilesDetail.mm */; };
+		20DE0C16214D55EA00F90AA1 /* AIFilesDetail+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BEF214D55E200F90AA1 /* AIFilesDetail+Private.mm */; };
+		20DE0C17214D55EA00F90AA1 /* AIPortal+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BF0214D55E300F90AA1 /* AIPortal+Private.mm */; };
+		20DE0C18214D55EA00F90AA1 /* AIProgress+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BF1214D55E300F90AA1 /* AIProgress+Private.mm */; };
+		20DE0C19214D55EA00F90AA1 /* AIDirectoriesDetail+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BF2214D55E300F90AA1 /* AIDirectoriesDetail+Private.mm */; };
+		20DE0C1A214D55EA00F90AA1 /* AIHttpProgressResult+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BF3214D55E300F90AA1 /* AIHttpProgressResult+Private.mm */; };
+		20DE0C1B214D55EA00F90AA1 /* AIOsIo+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BF9214D55E400F90AA1 /* AIOsIo+Private.mm */; };
+		20DE0C1C214D55EA00F90AA1 /* AIWorker+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BFA214D55E400F90AA1 /* AIWorker+Private.mm */; };
+		20DE0C1D214D55EA00F90AA1 /* AITask+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BFB214D55E400F90AA1 /* AITask+Private.mm */; };
+		20DE0C1E214D55EA00F90AA1 /* AIBoolResult+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BFD214D55E500F90AA1 /* AIBoolResult+Private.mm */; };
+		20DE0C1F214D55EA00F90AA1 /* AIHeader+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BFE214D55E500F90AA1 /* AIHeader+Private.mm */; };
+		20DE0C20214D55EA00F90AA1 /* AIDirectoryView+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0BFF214D55E500F90AA1 /* AIDirectoryView+Private.mm */; };
+		20DE0C21214D55EA00F90AA1 /* AIDirectoriesDetail.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0C01214D55E500F90AA1 /* AIDirectoriesDetail.mm */; };
+		20DE0C22214D55EA00F90AA1 /* AIHeader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0C02214D55E600F90AA1 /* AIHeader.mm */; };
+		20DE0C23214D55EA00F90AA1 /* AILongResult+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0C07214D55E700F90AA1 /* AILongResult+Private.mm */; };
+		20DE0C24214D55EA00F90AA1 /* AIHttpResult+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0C0F214D55E900F90AA1 /* AIHttpResult+Private.mm */; };
+		20DE0C28214D569600F90AA1 /* directory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0C26214D569600F90AA1 /* directory.cpp */; };
+		20DE0C29214D569600F90AA1 /* caching_engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0C27214D569600F90AA1 /* caching_engine.cpp */; };
+		20DE0C2C214D56B200F90AA1 /* openstack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0C2B214D56B200F90AA1 /* openstack.cpp */; };
+		20DE0C30214D56E500F90AA1 /* portal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0C2E214D56E500F90AA1 /* portal.cpp */; };
+		20DE0C31214D56E500F90AA1 /* std_plat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20DE0C2F214D56E500F90AA1 /* std_plat.cpp */; };
+		20DFC9EA22BEAF7A00F084ED /* AIStoreViewmodel+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20DFC9E722BEAF7900F084ED /* AIStoreViewmodel+Private.mm */; };
+		20E4637722B6134800BF8B2B /* AIDiagnostic+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20E4637622B6134800BF8B2B /* AIDiagnostic+Private.mm */; };
+		20E4637C22B61DED00BF8B2B /* AIFileItemDetail.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20E4637922B61DED00BF8B2B /* AIFileItemDetail.mm */; };
+		20E4637D22B61DED00BF8B2B /* AIFileItemDetail+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20E4637B22B61DED00BF8B2B /* AIFileItemDetail+Private.mm */; };
+		20E4638222B61DF900BF8B2B /* AIFolderItemDetail+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20E4637E22B61DF800BF8B2B /* AIFolderItemDetail+Private.mm */; };
+		20E4638322B61DF900BF8B2B /* AIFolderItemDetail.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20E4638122B61DF900BF8B2B /* AIFolderItemDetail.mm */; };
+		20E4638622B64B9900BF8B2B /* AIThumbnails.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4638522B64B9900BF8B2B /* AIThumbnails.m */; };
+		20E94F2621C9DBAA00FB718B /* AIUrlSessionCancellationToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E94F2521C9DBAA00FB718B /* AIUrlSessionCancellationToken.m */; };
+		20EDC6BB22BE32640029254D /* AIProduct+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC6B722BE32640029254D /* AIProduct+Private.mm */; };
+		20EDC6BC22BE32640029254D /* AIProduct.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC6B822BE32640029254D /* AIProduct.mm */; };
+		20EF45C12185797800E4D64C /* AIBinaryResult+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20EF45C02185797700E4D64C /* AIBinaryResult+Private.mm */; };
+		20F2E7C621C91302003A2986 /* AICancellationToken+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20F2E7C421C91302003A2986 /* AICancellationToken+Private.mm */; };
+		20F2E7CA21C91315003A2986 /* AIStringsResult+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20F2E7C721C91315003A2986 /* AIStringsResult+Private.mm */; };
+		20FF7CD322AEDB77004C4C8C /* content.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20FF7CD222AEDB77004C4C8C /* content.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		203A52282117519C00893D6A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		048C058D22F0B3BD00E4EBB2 /* signup_success_vm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = signup_success_vm.h; sourceTree = "<group>"; };
+		2004D4F822BF709A0057D8B4 /* zz_algorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zz_algorithms.h; sourceTree = "<group>"; };
+		2004D4F922BFB7900057D8B4 /* AITransactionDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITransactionDetail.h; sourceTree = "<group>"; };
+		2004D4FA22BFB7900057D8B4 /* AITransactionDetail+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AITransactionDetail+Private.h"; sourceTree = "<group>"; };
+		2004D4FB22BFB7900057D8B4 /* AITransactionState+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AITransactionState+Private.h"; sourceTree = "<group>"; };
+		2004D4FC22BFB7900057D8B4 /* AITransactionDetail.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AITransactionDetail.mm; sourceTree = "<group>"; };
+		2004D4FD22BFB7900057D8B4 /* AITransactionDetail+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AITransactionDetail+Private.mm"; sourceTree = "<group>"; };
+		2004D4FE22BFB7910057D8B4 /* AITransactionState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITransactionState.h; sourceTree = "<group>"; };
+		2013440A2247A0C20032C70E /* BCCKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCKeychain.m; sourceTree = "<group>"; };
+		2013440B2247A0C20032C70E /* BCCKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCKeychain.h; sourceTree = "<group>"; };
+		2014244F22B3F6BA00920278 /* AIFolderViewmodel+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIFolderViewmodel+Private.mm"; sourceTree = "<group>"; };
+		2014245022B3F6BB00920278 /* AIFormViewmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFormViewmodel.h; sourceTree = "<group>"; };
+		2014245122B3F6BB00920278 /* AIFolderViewmodel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIFolderViewmodel+Private.h"; sourceTree = "<group>"; };
+		2014245222B3F6BB00920278 /* AIFolderViewmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFolderViewmodel.h; sourceTree = "<group>"; };
+		2014245322B3F6BB00920278 /* AIFormViewmodel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIFormViewmodel+Private.h"; sourceTree = "<group>"; };
+		2014245422B3F6BB00920278 /* AIFormViewmodel+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIFormViewmodel+Private.mm"; sourceTree = "<group>"; };
+		2014245722B3F6CC00920278 /* AIRootViewmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRootViewmodel.h; sourceTree = "<group>"; };
+		2014245822B3F6CC00920278 /* AIRootViewmodel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIRootViewmodel+Private.h"; sourceTree = "<group>"; };
+		2014245922B3F6CC00920278 /* AIRootViewmodel+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIRootViewmodel+Private.mm"; sourceTree = "<group>"; };
+		201F761E22A3A6130079BAEA /* AIView+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIView+Private.mm"; sourceTree = "<group>"; };
+		201F761F22A3A6140079BAEA /* AIView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIView+Private.h"; sourceTree = "<group>"; };
+		201F762022A3A6140079BAEA /* AIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIView.h; sourceTree = "<group>"; };
+		2024D60622A29AD50041FEF8 /* AIReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIReference.h; sourceTree = "<group>"; };
+		2024D60722A29AD60041FEF8 /* AIReference+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIReference+Private.mm"; sourceTree = "<group>"; };
+		2024D60822A29AD60041FEF8 /* AIColour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIColour.h; sourceTree = "<group>"; };
+		2024D60922A29AD60041FEF8 /* AIColour+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIColour+Private.h"; sourceTree = "<group>"; };
+		2024D60A22A29AD60041FEF8 /* AIDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDataType.h; sourceTree = "<group>"; };
+		2024D60B22A29AD60041FEF8 /* AIStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStyle.h; sourceTree = "<group>"; };
+		2024D60C22A29AD60041FEF8 /* AIDataType+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIDataType+Private.h"; sourceTree = "<group>"; };
+		2024D60D22A29AD60041FEF8 /* AIAlign+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIAlign+Private.h"; sourceTree = "<group>"; };
+		2024D60E22A29AD60041FEF8 /* AIAlign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAlign.h; sourceTree = "<group>"; };
+		2024D60F22A29AD60041FEF8 /* AIScreenType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIScreenType.h; sourceTree = "<group>"; };
+		2024D61022A29AD60041FEF8 /* AISize+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AISize+Private.h"; sourceTree = "<group>"; };
+		2024D61122A29AD60041FEF8 /* AIWeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIWeight.h; sourceTree = "<group>"; };
+		2024D61222A29AD60041FEF8 /* AIStyle+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIStyle+Private.h"; sourceTree = "<group>"; };
+		2024D61322A29AD60041FEF8 /* AIStyle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AIStyle.mm; sourceTree = "<group>"; };
+		2024D61422A29AD60041FEF8 /* AIField.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AIField.mm; sourceTree = "<group>"; };
+		2024D61522A29AD70041FEF8 /* AIFieldType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFieldType.h; sourceTree = "<group>"; };
+		2024D61622A29AD70041FEF8 /* AIGenericForm+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIGenericForm+Private.h"; sourceTree = "<group>"; };
+		2024D61722A29AD70041FEF8 /* AIReference+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIReference+Private.h"; sourceTree = "<group>"; };
+		2024D61822A29AD70041FEF8 /* AIGenericForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIGenericForm.h; sourceTree = "<group>"; };
+		2024D61A22A29AD70041FEF8 /* AIBlock.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AIBlock.mm; sourceTree = "<group>"; };
+		2024D61B22A29AD70041FEF8 /* AIStyle+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIStyle+Private.mm"; sourceTree = "<group>"; };
+		2024D61C22A29AD70041FEF8 /* AISize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISize.h; sourceTree = "<group>"; };
+		2024D61D22A29AD70041FEF8 /* AIBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBlock.h; sourceTree = "<group>"; };
+		2024D61F22A29AD70041FEF8 /* AIBlock+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIBlock+Private.h"; sourceTree = "<group>"; };
+		2024D62022A29AD70041FEF8 /* AIField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIField.h; sourceTree = "<group>"; };
+		2024D62122A29AD70041FEF8 /* AIReference.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AIReference.mm; sourceTree = "<group>"; };
+		2024D62222A29AD70041FEF8 /* AIFieldType+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIFieldType+Private.h"; sourceTree = "<group>"; };
+		2024D62322A29AD70041FEF8 /* AIWeight+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIWeight+Private.h"; sourceTree = "<group>"; };
+		2024D62422A29AD70041FEF8 /* AIScreenType+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIScreenType+Private.h"; sourceTree = "<group>"; };
+		2024D62622A29AD80041FEF8 /* AIField+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIField+Private.mm"; sourceTree = "<group>"; };
+		2024D62722A29AD80041FEF8 /* AIBlock+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIBlock+Private.mm"; sourceTree = "<group>"; };
+		2024D62822A29AD80041FEF8 /* AIField+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIField+Private.h"; sourceTree = "<group>"; };
+		2024D62922A29AD80041FEF8 /* AIGenericForm+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIGenericForm+Private.mm"; sourceTree = "<group>"; };
+		202D2AE121D5FE9800ECAE6C /* AIAccountScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AIAccountScreen.h; path = ../../visual/Account/AIAccountScreen.h; sourceTree = "<group>"; };
+		202D2AE221D5FE9800ECAE6C /* AIAccountScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AIAccountScreen.m; path = ../../visual/Account/AIAccountScreen.m; sourceTree = "<group>"; };
+		202D2AE421D6247800ECAE6C /* AIAccountActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AIAccountActions.h; path = ../../visual/Account/AIAccountActions.h; sourceTree = "<group>"; };
+		202D3E9722B7BE00007C5828 /* create_folder_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = create_folder_viewmodel.h; sourceTree = "<group>"; };
+		202D3E9822B7ED51007C5828 /* rename_folder_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rename_folder_viewmodel.h; sourceTree = "<group>"; };
+		202D3E9A22B8039C007C5828 /* about_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = about_viewmodel.h; sourceTree = "<group>"; };
+		202D3E9B22B82524007C5828 /* user_viewmodel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = user_viewmodel.cpp; sourceTree = "<group>"; };
+		202D3E9D22B83AE9007C5828 /* blomp_session.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blomp_session.h; sourceTree = "<group>"; };
+		202D3E9E22B83C87007C5828 /* blomp_session.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = blomp_session.cpp; sourceTree = "<group>"; };
+		202D3EA022B854EA007C5828 /* AICertCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICertCheck.h; sourceTree = "<group>"; };
+		202D3EA122B854EA007C5828 /* AICertCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AICertCheck.m; sourceTree = "<group>"; };
+		202D3EA422B86547007C5828 /* edit_profile_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = edit_profile_viewmodel.h; sourceTree = "<group>"; };
+		202D3EA622B88C8D007C5828 /* upgrade_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = upgrade_viewmodel.h; sourceTree = "<group>"; };
+		20395A1C22A3A9B500E4E156 /* AIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIViewController.h; sourceTree = "<group>"; };
+		20395A1D22A3A9B500E4E156 /* AIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIViewController.m; sourceTree = "<group>"; };
+		203A522A2117519C00893D6A /* CloudStore */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CloudStore; sourceTree = BUILT_PRODUCTS_DIR; };
+		203A523C211754D200893D6A /* CloudStoreMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudStoreMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		203A523E211754D200893D6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		203A523F211754D200893D6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		203A5247211754D200893D6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		203A524A211754D200893D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		203A524C211754D200893D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		203A524D211754D200893D6A /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		203D38BE22A2A3A7000AF408 /* AIValidatedForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIValidatedForm.h; sourceTree = "<group>"; };
+		203D38BF22A2A3A7000AF408 /* AIInputElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIInputElement.h; sourceTree = "<group>"; };
+		203D38C022A2A3B6000AF408 /* AIHelpElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIHelpElement.m; sourceTree = "<group>"; };
+		203D38C122A2A3B6000AF408 /* AIHelpElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHelpElement.h; sourceTree = "<group>"; };
+		203D38C222A2A3B6000AF408 /* AIBooleanInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBooleanInput.h; sourceTree = "<group>"; };
+		203D38C322A2A3B6000AF408 /* AIPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPicker.h; sourceTree = "<group>"; };
+		203D38C422A2A3B6000AF408 /* AIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIButton.m; sourceTree = "<group>"; };
+		203D38C522A2A3B6000AF408 /* AIText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIText.h; sourceTree = "<group>"; };
+		203D38C722A2A3B6000AF408 /* AIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIButton.h; sourceTree = "<group>"; };
+		203D38C922A2A3B7000AF408 /* AIBooleanInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIBooleanInput.m; sourceTree = "<group>"; };
+		203D38CA22A2A3B7000AF408 /* AIPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIPicker.m; sourceTree = "<group>"; };
+		203D38CB22A2A3B7000AF408 /* AIText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIText.m; sourceTree = "<group>"; };
+		203D38CC22A2A3B7000AF408 /* AIMultilineTextInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIMultilineTextInput.m; sourceTree = "<group>"; };
+		203D38CD22A2A3B7000AF408 /* AIMultilineTextInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMultilineTextInput.h; sourceTree = "<group>"; };
+		203D38D522A2A3CE000AF408 /* AIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIImage.m; sourceTree = "<group>"; };
+		203D38D622A2A3CE000AF408 /* AITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITextField.h; sourceTree = "<group>"; };
+		203D38D722A2A3CE000AF408 /* AIBaseForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIBaseForm.m; sourceTree = "<group>"; };
+		203D38D822A2A3CE000AF408 /* AIPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIPickerController.m; sourceTree = "<group>"; };
+		203D38DA22A2A3CE000AF408 /* AIBaseFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIBaseFormViewController.m; sourceTree = "<group>"; };
+		203D38DB22A2A3CE000AF408 /* AIMultilineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMultilineButton.h; sourceTree = "<group>"; };
+		203D38DC22A2A3CE000AF408 /* AIPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPickerController.h; sourceTree = "<group>"; };
+		203D38DD22A2A3CE000AF408 /* AIHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIHelp.m; sourceTree = "<group>"; };
+		203D38DE22A2A3CE000AF408 /* AIBaseFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBaseFormViewController.h; sourceTree = "<group>"; };
+		203D38E122A2A3CE000AF408 /* AIBaseForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBaseForm.h; sourceTree = "<group>"; };
+		203D38E222A2A3CE000AF408 /* AIMultilineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIMultilineButton.m; sourceTree = "<group>"; };
+		203D38E322A2A3CE000AF408 /* AIConfirmController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIConfirmController.m; sourceTree = "<group>"; };
+		203D38E422A2A3CE000AF408 /* AIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIImage.h; sourceTree = "<group>"; };
+		203D38E522A2A3CE000AF408 /* AIVerticalSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIVerticalSpace.h; sourceTree = "<group>"; };
+		203D38E722A2A3CF000AF408 /* AIHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHelp.h; sourceTree = "<group>"; };
+		203D38E822A2A3CF000AF408 /* AIStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIStarRatingView.m; sourceTree = "<group>"; };
+		203D38E922A2A3CF000AF408 /* AIStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStarRatingView.h; sourceTree = "<group>"; };
+		203D38EB22A2A3CF000AF408 /* AITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AITextField.m; sourceTree = "<group>"; };
+		203D38ED22A2A3CF000AF408 /* AIPhoneFormController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPhoneFormController.h; sourceTree = "<group>"; };
+		203D38EE22A2A3CF000AF408 /* AIVerticalSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIVerticalSpace.m; sourceTree = "<group>"; };
+		203D38EF22A2A3CF000AF408 /* AIPhoneFormController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIPhoneFormController.m; sourceTree = "<group>"; };
+		203D38F022A2A3CF000AF408 /* AIConfirmController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIConfirmController.h; sourceTree = "<group>"; };
+		203D701921CA894200EBB2D3 /* AIBooleanInputx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AIBooleanInputx.h; path = ../../visual/Form/AIBooleanInputx.h; sourceTree = "<group>"; };
+		203D701A21CA894200EBB2D3 /* AIBooleanInputx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AIBooleanInputx.m; path = ../../visual/Form/AIBooleanInputx.m; sourceTree = "<group>"; };
+		203DFCEE22B6573600CAB3C7 /* AIStateChange.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AIStateChange.mm; sourceTree = "<group>"; };
+		203DFCEF22B6573600CAB3C7 /* AIStateChange+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIStateChange+Private.mm"; sourceTree = "<group>"; };
+		203DFCF022B6573600CAB3C7 /* AIStateChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStateChange.h; sourceTree = "<group>"; };
+		203DFCF122B6573600CAB3C7 /* AIStateChange+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIStateChange+Private.h"; sourceTree = "<group>"; };
+		203DFCF422B69BA500CAB3C7 /* forgot_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = forgot_viewmodel.h; sourceTree = "<group>"; };
+		2045FB5C2118AE160047E339 /* DJIError.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DJIError.mm; sourceTree = "<group>"; };
+		2045FB5D2118AE170047E339 /* DJIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIError.h; sourceTree = "<group>"; };
+		2045FB5E2118AE170047E339 /* DJICppWrapperCache+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DJICppWrapperCache+Private.h"; sourceTree = "<group>"; };
+		2045FB5F2118AE170047E339 /* DJIObjcWrapperCache+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DJIObjcWrapperCache+Private.h"; sourceTree = "<group>"; };
+		2045FB602118AE170047E339 /* DJIMarshal+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DJIMarshal+Private.h"; sourceTree = "<group>"; };
+		2045FB612118AE170047E339 /* DJIProxyCaches.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DJIProxyCaches.mm; sourceTree = "<group>"; };
+		2046E07F218461BF006FB9E3 /* AIVoidResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIVoidResult.h; sourceTree = "<group>"; };
+		2046E080218461BF006FB9E3 /* AIVoidResult+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIVoidResult+Private.h"; sourceTree = "<group>"; };
+		2046E081218461BF006FB9E3 /* AIVoidResult+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIVoidResult+Private.mm"; sourceTree = "<group>"; };
+		2046E083218461D7006FB9E3 /* AIOsGui+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIOsGui+Private.h"; sourceTree = "<group>"; };
+		2046E084218461D7006FB9E3 /* AIOsForm+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIOsForm+Private.mm"; sourceTree = "<group>"; };
+		2046E085218461D7006FB9E3 /* AIOsGui+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIOsGui+Private.mm"; sourceTree = "<group>"; };
+		2046E086218461D7006FB9E3 /* AIOsForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIOsForm.h; sourceTree = "<group>"; };
+		2046E087218461D8006FB9E3 /* AIMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMessage.h; sourceTree = "<group>"; };
+		2046E088218461D8006FB9E3 /* AIOsForm+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIOsForm+Private.h"; sourceTree = "<group>"; };
+		2046E089218461D8006FB9E3 /* AIMessage+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIMessage+Private.h"; sourceTree = "<group>"; };
+		2046E08A218461D8006FB9E3 /* AIMessage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AIMessage.mm; sourceTree = "<group>"; };
+		2046E08B218461D9006FB9E3 /* AIMessage+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIMessage+Private.mm"; sourceTree = "<group>"; };
+		2046E08C218461D9006FB9E3 /* AIOsGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIOsGui.h; sourceTree = "<group>"; };
+		2046E091218461E8006FB9E3 /* AIStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStatus.h; sourceTree = "<group>"; };
+		2046E092218461E8006FB9E3 /* AIStringResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStringResult.h; sourceTree = "<group>"; };
+		2046E093218461E8006FB9E3 /* AIStatus+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIStatus+Private.h"; sourceTree = "<group>"; };
+		2046E094218461E8006FB9E3 /* AIStringResult+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIStringResult+Private.h"; sourceTree = "<group>"; };
+		2046E095218461E8006FB9E3 /* AIStringResult+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIStringResult+Private.mm"; sourceTree = "<group>"; };
+		2046E09D21846A2A006FB9E3 /* AILaunchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AILaunchController.h; sourceTree = "<group>"; };
+		2046E09E21846A2A006FB9E3 /* AILaunchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AILaunchController.m; sourceTree = "<group>"; };
+		205EA82F21D65A6D008BBE32 /* login_form.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = login_form.h; sourceTree = "<group>"; };
+		205EA83021D65A6D008BBE32 /* about_form.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = about_form.h; sourceTree = "<group>"; };
+		205EA83121D65A6D008BBE32 /* confirm_form.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = confirm_form.h; sourceTree = "<group>"; };
+		205F619E22AD664400FE806B /* AIFolderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIFolderController.h; sourceTree = "<group>"; };
+		205F619F22AD664400FE806B /* AIFolderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIFolderController.m; sourceTree = "<group>"; };
+		205F61A122AD6F6600FE806B /* loading_subviewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loading_subviewmodel.h; sourceTree = "<group>"; };
+		2072C5EE22A3C63500D72B71 /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		2072C5EF22A3C63500D72B71 /* globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
+		2072C5F022A3C63500D72B71 /* viewmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = viewmodel.h; sourceTree = "<group>"; };
+		2072C5F222A3C64400D72B71 /* root_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = root_viewmodel.h; sourceTree = "<group>"; };
+		2072C5F322A3C7A500D72B71 /* root_viewmodel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = root_viewmodel.cpp; sourceTree = "<group>"; };
+		2072C5F622A3CC5F00D72B71 /* services.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = services.h; sourceTree = "<group>"; };
+		2072C5F722A3CE6400D72B71 /* model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		2072C5F922A3D3E500D72B71 /* user_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = user_viewmodel.h; sourceTree = "<group>"; };
+		2072C5FA22A3D3FE00D72B71 /* settings_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = settings_viewmodel.h; sourceTree = "<group>"; };
+		2072C5FB22A3D41600D72B71 /* plan_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plan_viewmodel.h; sourceTree = "<group>"; };
+		2072C5FC22A3D81800D72B71 /* signin_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = signin_viewmodel.h; sourceTree = "<group>"; };
+		2077D89422A99C6E00D95DE3 /* AIRootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIRootController.h; sourceTree = "<group>"; };
+		2077D89522A99C6E00D95DE3 /* AIRootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIRootController.m; sourceTree = "<group>"; };
+		207F7421218F3E3B001546AC /* AITextFieldx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AITextFieldx.h; path = ../../visual/Form/AITextFieldx.h; sourceTree = "<group>"; };
+		207F7422218F3E3B001546AC /* AITextFieldx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AITextFieldx.m; path = ../../visual/Form/AITextFieldx.m; sourceTree = "<group>"; };
+		207F7424218F5A8B001546AC /* AIInteractiveElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AIInteractiveElement.h; path = ../../visual/Form/AIInteractiveElement.h; sourceTree = "<group>"; };
+		207F7425218F5BBD001546AC /* AIInputElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AIInputElement.h; path = ../../visual/Form/AIInputElement.h; sourceTree = "<group>"; };
+		207F7426218F5F45001546AC /* AIButtonx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AIButtonx.h; path = ../../visual/Form/AIButtonx.h; sourceTree = "<group>"; };
+		207F7427218F5F45001546AC /* AIButtonx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AIButtonx.m; path = ../../visual/Form/AIButtonx.m; sourceTree = "<group>"; };
+		2081BA232135D37E005F9168 /* AITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AITheme.h; sourceTree = "<group>"; };
+		2081BA242135D37E005F9168 /* AITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AITheme.m; sourceTree = "<group>"; };
+		2082996E2247E39E00B884FD /* AIRenameFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIRenameFile.h; sourceTree = "<group>"; };
+		2082996F2247E39E00B884FD /* AIRenameFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIRenameFile.m; sourceTree = "<group>"; };
+		20846722215657FD007F67C0 /* AIFilesDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIFilesDetailView.h; sourceTree = "<group>"; };
+		20846723215657FD007F67C0 /* AIFilesDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIFilesDetailView.m; sourceTree = "<group>"; };
+		208D009C2206F86A0010ED7D /* AIVideoPreviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AIVideoPreviewController.h; path = ../../visual/Directory/AIVideoPreviewController.h; sourceTree = "<group>"; };
+		208D009D2206F86A0010ED7D /* AIVideoPreviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AIVideoPreviewController.m; path = ../../visual/Directory/AIVideoPreviewController.m; sourceTree = "<group>"; };
+		208E967322CAAAE100A586CD /* change_password_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = change_password_viewmodel.h; sourceTree = "<group>"; };
+		208E967522CAB1B500A586CD /* change_forumname_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = change_forumname_viewmodel.h; sourceTree = "<group>"; };
+		2091F23E22D9D4D3007335CF /* viewlog_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = viewlog_viewmodel.h; sourceTree = "<group>"; };
+		2091F23F22D9DA51007335CF /* device_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = device_platform.h; sourceTree = "<group>"; };
+		20A2188621CBAEF800C9CF48 /* AIToolbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AIToolbarViewController.h; path = ../visual/AIToolbarViewController.h; sourceTree = "<group>"; };
+		20A2188721CBAEF800C9CF48 /* AIToolbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AIToolbarViewController.m; path = ../visual/AIToolbarViewController.m; sourceTree = "<group>"; };
+		20A2188921CBC03700C9CF48 /* AIToolbarViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AIToolbarViewControllerDelegate.h; path = ../visual/AIToolbarViewControllerDelegate.h; sourceTree = "<group>"; };
+		20A4D96522A40B1300E9E1C7 /* AINavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AINavigationController.h; sourceTree = "<group>"; };
+		20A4D96622A40B1300E9E1C7 /* AINavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AINavigationController.m; sourceTree = "<group>"; };
+		20A8AD66222BD44B003BF5DF /* CloudStoreMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudStoreMobile.entitlements; sourceTree = "<group>"; };
+		20AC50A921D76AFE0056C424 /* AIDirectoryList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AIDirectoryList.h; path = ../../visual/Directory/AIDirectoryList.h; sourceTree = "<group>"; };
+		20AC50AA21D76AFE0056C424 /* AIDirectoryList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AIDirectoryList.m; path = ../../visual/Directory/AIDirectoryList.m; sourceTree = "<group>"; };
+		20AC50AC21D76FE70056C424 /* AIFileCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AIFileCollectionViewCell.h; path = ../../visual/Directory/AIFileCollectionViewCell.h; sourceTree = "<group>"; };
+		20AC50AD21D76FE70056C424 /* AIFileCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AIFileCollectionViewCell.m; path = ../../visual/Directory/AIFileCollectionViewCell.m; sourceTree = "<group>"; };
+		20AC50AF21D777940056C424 /* AIDirCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AIDirCollectionViewCell.h; path = ../../visual/Directory/AIDirCollectionViewCell.h; sourceTree = "<group>"; };
+		20AC50B021D777940056C424 /* AIDirCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AIDirCollectionViewCell.m; path = ../../visual/Directory/AIDirCollectionViewCell.m; sourceTree = "<group>"; };
+		20AF0D09223502C900A21C26 /* AILogType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILogType.h; sourceTree = "<group>"; };
+		20AF0D0A223502CA00A21C26 /* AILogType+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AILogType+Private.h"; sourceTree = "<group>"; };
+		20AF380E22077EE600AD8F70 /* ActionResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ActionResult.h; path = ../../visual/Form/ActionResult.h; sourceTree = "<group>"; };
+		20AF380F22077EE600AD8F70 /* ActionResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ActionResult.m; path = ../../visual/Form/ActionResult.m; sourceTree = "<group>"; };
+		20AF38122207809500AD8F70 /* AICreateFolderScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AICreateFolderScreen.h; path = ../../visual/CreateFolder/AICreateFolderScreen.h; sourceTree = "<group>"; };
+		20AF38132207809500AD8F70 /* AICreateFolderScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AICreateFolderScreen.m; path = ../../visual/CreateFolder/AICreateFolderScreen.m; sourceTree = "<group>"; };
+		20B1EBB322BAC4E500CF644C /* signup_subviewmodel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = signup_subviewmodel.cpp; sourceTree = "<group>"; };
+		20B52C1422B0B69200C3AF20 /* AIToolbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIToolbarController.h; sourceTree = "<group>"; };
+		20B52C1522B0B69200C3AF20 /* AIToolbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIToolbarController.m; sourceTree = "<group>"; };
+		20BB59AE22A2AEE90025927D /* AITextInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AITextInput.m; sourceTree = "<group>"; };
+		20BB59AF22A2AEE90025927D /* AITextInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITextInput.h; sourceTree = "<group>"; };
+		20BBCF9C22492C4800D27FB6 /* AIRenameFolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIRenameFolder.h; sourceTree = "<group>"; };
+		20BBCF9D22492C4800D27FB6 /* AIRenameFolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIRenameFolder.m; sourceTree = "<group>"; };
+		20BFCECB22B4E05500B9C5A7 /* AIFolderView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIFolderView+Private.h"; sourceTree = "<group>"; };
+		20BFCECC22B4E05500B9C5A7 /* AIFolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFolderView.h; sourceTree = "<group>"; };
+		20BFCECD22B4E05500B9C5A7 /* AIFolderView+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIFolderView+Private.mm"; sourceTree = "<group>"; };
+		20BFCECF22B4FCBA00B9C5A7 /* AIFormView+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIFormView+Private.mm"; sourceTree = "<group>"; };
+		20BFCED022B4FCBA00B9C5A7 /* AIFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFormView.h; sourceTree = "<group>"; };
+		20BFCED122B4FCBB00B9C5A7 /* AIFormView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIFormView+Private.h"; sourceTree = "<group>"; };
+		20BFCED622B5076300B9C5A7 /* AIUiCallback+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIUiCallback+Private.mm"; sourceTree = "<group>"; };
+		20BFCED722B5076400B9C5A7 /* AIUiCallback+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIUiCallback+Private.h"; sourceTree = "<group>"; };
+		20BFCED822B5076400B9C5A7 /* AIUiCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIUiCallback.h; sourceTree = "<group>"; };
+		20BFCEDA22B507BF00B9C5A7 /* AIUIThreadRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIUIThreadRunner.h; sourceTree = "<group>"; };
+		20BFCEDB22B507BF00B9C5A7 /* AIUIThreadRunner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIUIThreadRunner.m; sourceTree = "<group>"; };
+		20C0DA6222A42141000C1127 /* signup_subviewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = signup_subviewmodel.h; sourceTree = "<group>"; };
+		20C0DA6322A45172000C1127 /* model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = model.cpp; sourceTree = "<group>"; };
+		20C10B8922DA0A30002A9E8C /* store_interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = store_interface.h; sourceTree = "<group>"; };
+		20C10B8A22DA0B40002A9E8C /* store_proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = store_proxy.h; sourceTree = "<group>"; };
+		20C9BCAD22630EAB0086183C /* IQMediaPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQMediaPickerController.m; sourceTree = "<group>"; };
+		20C9BCE422630EAB0086183C /* IQMediaPickerSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQMediaPickerSelection.m; sourceTree = "<group>"; };
+		20C9BCE522630EAB0086183C /* UIImage+IQMediaPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+IQMediaPickerController.h"; sourceTree = "<group>"; };
+		20C9BCE722630EAB0086183C /* IQAudioPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioPickerController.h; sourceTree = "<group>"; };
+		20C9BCE822630EAB0086183C /* IQAudioPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioPickerController.m; sourceTree = "<group>"; };
+		20C9BCE922630EAB0086183C /* IQAudioPickerController.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IQAudioPickerController.xcassets; sourceTree = "<group>"; };
+		20C9BCEB22630EAB0086183C /* IQSongsPlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsPlaylistViewController.h; sourceTree = "<group>"; };
+		20C9BCEC22630EAB0086183C /* IQSongsAlbumListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsAlbumListViewController.m; sourceTree = "<group>"; };
+		20C9BCED22630EAB0086183C /* IQSongsGenreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsGenreViewController.m; sourceTree = "<group>"; };
+		20C9BCEE22630EAB0086183C /* IQSongsArtistListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsArtistListViewController.h; sourceTree = "<group>"; };
+		20C9BCEF22630EAB0086183C /* IQSongsComposersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsComposersViewController.h; sourceTree = "<group>"; };
+		20C9BCF022630EAB0086183C /* IQSongsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsListViewController.m; sourceTree = "<group>"; };
+		20C9BCF122630EAB0086183C /* IQSongsCompilationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsCompilationsViewController.m; sourceTree = "<group>"; };
+		20C9BCF322630EAB0086183C /* IQSongsListTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsListTableHeaderView.h; sourceTree = "<group>"; };
+		20C9BCF422630EAB0086183C /* IQSongsListTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsListTableHeaderView.m; sourceTree = "<group>"; };
+		20C9BCF522630EAB0086183C /* IQSongsGenreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsGenreViewController.h; sourceTree = "<group>"; };
+		20C9BCF622630EAB0086183C /* IQSongsAlbumListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsAlbumListViewController.h; sourceTree = "<group>"; };
+		20C9BCF722630EAB0086183C /* IQSongsPlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsPlaylistViewController.m; sourceTree = "<group>"; };
+		20C9BCF822630EAB0086183C /* IQSongsArtistListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsArtistListViewController.m; sourceTree = "<group>"; };
+		20C9BCFA22630EAB0086183C /* IQSongsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsCell.h; sourceTree = "<group>"; };
+		20C9BCFB22630EAB0086183C /* IQSongsAlbumViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsAlbumViewCell.h; sourceTree = "<group>"; };
+		20C9BCFC22630EAB0086183C /* IQSongsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsCell.m; sourceTree = "<group>"; };
+		20C9BCFD22630EAB0086183C /* IQSongsAlbumViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsAlbumViewCell.m; sourceTree = "<group>"; };
+		20C9BCFE22630EAB0086183C /* IQSongsComposersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsComposersViewController.m; sourceTree = "<group>"; };
+		20C9BD0022630EAB0086183C /* IQAudioPickerShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioPickerShadowView.h; sourceTree = "<group>"; };
+		20C9BD0122630EAB0086183C /* IQAudioPickerShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioPickerShadowView.m; sourceTree = "<group>"; };
+		20C9BD0222630EAB0086183C /* IQSongsCompilationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsCompilationsViewController.h; sourceTree = "<group>"; };
+		20C9BD0322630EAB0086183C /* IQSongsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsListViewController.h; sourceTree = "<group>"; };
+		20C9BD0522630EAB0086183C /* IQAudioPickerUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioPickerUtility.h; sourceTree = "<group>"; };
+		20C9BD0622630EAB0086183C /* IQAudioPickerUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioPickerUtility.m; sourceTree = "<group>"; };
+		20C9BD0722630EAB0086183C /* IQMediaPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQMediaPickerController.h; sourceTree = "<group>"; };
+		20C9BD0922630EAB0086183C /* IQAlbumAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAlbumAssetsViewController.m; sourceTree = "<group>"; };
+		20C9BD0A22630EAB0086183C /* IQAssetsPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAssetsPickerController.h; sourceTree = "<group>"; };
+		20C9BD0C22630EAB0086183C /* IQAssetsPickerShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAssetsPickerShadowView.h; sourceTree = "<group>"; };
+		20C9BD0D22630EAB0086183C /* IQCheckmarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQCheckmarkView.h; sourceTree = "<group>"; };
+		20C9BD0E22630EAB0086183C /* IQCheckmarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQCheckmarkView.m; sourceTree = "<group>"; };
+		20C9BD0F22630EAB0086183C /* IQAssetsPickerShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAssetsPickerShadowView.m; sourceTree = "<group>"; };
+		20C9BD1122630EAB0086183C /* IQAssetsAlbumViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAssetsAlbumViewCell.h; sourceTree = "<group>"; };
+		20C9BD1222630EAB0086183C /* IQAssetsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAssetsCell.h; sourceTree = "<group>"; };
+		20C9BD1322630EAB0086183C /* IQAssetsAlbumViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAssetsAlbumViewCell.m; sourceTree = "<group>"; };
+		20C9BD1422630EAB0086183C /* IQAssetsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAssetsCell.m; sourceTree = "<group>"; };
+		20C9BD1522630EAB0086183C /* IQAlbumAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAlbumAssetsViewController.h; sourceTree = "<group>"; };
+		20C9BD1622630EAB0086183C /* IQAssetsPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAssetsPickerController.m; sourceTree = "<group>"; };
+		20C9BD1722630EAB0086183C /* IQMediaPickerSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQMediaPickerSelection.h; sourceTree = "<group>"; };
+		20C9BD1822630EAB0086183C /* UIImage+IQMediaPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+IQMediaPickerController.m"; sourceTree = "<group>"; };
+		20CA8EB122D9BD8400C6EF58 /* custom_platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = custom_platform.h; sourceTree = "<group>"; };
+		20CD817C22B5417F0065613A /* AIPhotoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIPhotoController.h; sourceTree = "<group>"; };
+		20CD817D22B5417F0065613A /* AIPhotoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIPhotoController.m; sourceTree = "<group>"; };
+		20CD817F22B54A1E0065613A /* AIPreViewmodel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIPreViewmodel+Private.h"; sourceTree = "<group>"; };
+		20CD818022B54A1E0065613A /* AIPreViewmodel+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIPreViewmodel+Private.mm"; sourceTree = "<group>"; };
+		20CD818122B54A1E0065613A /* AIPreViewmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPreViewmodel.h; sourceTree = "<group>"; };
+		20CD818322B54C0E0065613A /* preview_viewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = preview_viewmodel.h; sourceTree = "<group>"; };
+		20CD818822B57E1C0065613A /* AIVideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIVideoController.h; sourceTree = "<group>"; };
+		20CD818922B57E1C0065613A /* AIVideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIVideoController.m; sourceTree = "<group>"; };
+		20CD818B22B58B850065613A /* AITextController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AITextController.h; sourceTree = "<group>"; };
+		20CD818C22B58B850065613A /* AITextController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AITextController.m; sourceTree = "<group>"; };
+		20CF637722AE0396002AE7BD /* general.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = general.h; sourceTree = "<group>"; };
+		20D13CC12280AFEE007F440F /* AITransactionObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AITransactionObserver.h; sourceTree = "<group>"; };
+		20D13CC22280AFEE007F440F /* AITransactionObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AITransactionObserver.m; sourceTree = "<group>"; };
+		20D7C62122B20846004F5254 /* rename_file_subviewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rename_file_subviewmodel.h; sourceTree = "<group>"; };
+		20D8ECDC218DF85D00946EBE /* AIElement+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIElement+Private.mm"; sourceTree = "<group>"; };
+		20D8ECDD218DF85D00946EBE /* AIElementType+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIElementType+Private.h"; sourceTree = "<group>"; };
+		20D8ECDE218DF85E00946EBE /* AIElementType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIElementType.h; sourceTree = "<group>"; };
+		20D8ECDF218DF85E00946EBE /* AIElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIElement.h; sourceTree = "<group>"; };
+		20D8ECE0218DF85E00946EBE /* AIElement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AIElement.mm; sourceTree = "<group>"; };
+		20D8ECE1218DF85E00946EBE /* AIElement+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIElement+Private.h"; sourceTree = "<group>"; };
+		20D8ECE4218DF87500946EBE /* AIIntResult+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIIntResult+Private.h"; sourceTree = "<group>"; };
+		20D8ECE5218DF87500946EBE /* AIIntResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIIntResult.h; sourceTree = "<group>"; };
+		20D8ECE6218DF87500946EBE /* AIIntResult+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIIntResult+Private.mm"; sourceTree = "<group>"; };
+		20D8ECE8218DFAC900946EBE /* AIFormViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIFormViewController.h; sourceTree = "<group>"; };
+		20D8ECE9218DFAC900946EBE /* AIFormViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AIFormViewController.mm; sourceTree = "<group>"; };
+		20D8ECEB218E0B7200946EBE /* AIFonts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIFonts.h; sourceTree = "<group>"; };
+		20D8ECEC218E0B7200946EBE /* AIFonts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIFonts.m; sourceTree = "<group>"; };
+		20D8ECEF218E0F8C00946EBE /* AITextInputx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AITextInputx.h; sourceTree = "<group>"; };
+		20D8ECF0218E0F8C00946EBE /* AITextInputx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AITextInputx.m; sourceTree = "<group>"; };
+		20DB5046227B64D200BEA8B0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		20DE0BA7214D551900F90AA1 /* AIGCDWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIGCDWorker.h; sourceTree = "<group>"; };
+		20DE0BA8214D551900F90AA1 /* AIGCDWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIGCDWorker.m; sourceTree = "<group>"; };
+		20DE0BA9214D551A00F90AA1 /* AIHttpContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHttpContext.h; sourceTree = "<group>"; };
+		20DE0BAA214D551A00F90AA1 /* AIOsIoImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIOsIoImpl.m; sourceTree = "<group>"; };
+		20DE0BAB214D551A00F90AA1 /* AIOsIoImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIOsIoImpl.h; sourceTree = "<group>"; };
+		20DE0BAC214D551A00F90AA1 /* AIHttpContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIHttpContext.m; sourceTree = "<group>"; };
+		20DE0BAD214D551A00F90AA1 /* AIUploadContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIUploadContext.m; sourceTree = "<group>"; };
+		20DE0BAE214D551A00F90AA1 /* AIDownloadContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIDownloadContext.m; sourceTree = "<group>"; };
+		20DE0BAF214D551A00F90AA1 /* AIDownloadContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDownloadContext.h; sourceTree = "<group>"; };
+		20DE0BB0214D551A00F90AA1 /* AINameStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AINameStore.h; sourceTree = "<group>"; };
+		20DE0BB1214D551A00F90AA1 /* AIUploadContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIUploadContext.h; sourceTree = "<group>"; };
+		20DE0BB8214D554000F90AA1 /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
+		20DE0BB9214D554000F90AA1 /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
+		20DE0BBA214D554000F90AA1 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		20DE0BBB214D554100F90AA1 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		20DE0BBC214D554100F90AA1 /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
+		20DE0BBD214D554100F90AA1 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
+		20DE0BBE214D554100F90AA1 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		20DE0BBF214D554100F90AA1 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		20DE0BC0214D554100F90AA1 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
+		20DE0BC5214D555F00F90AA1 /* AIInputFilenameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIInputFilenameViewController.h; sourceTree = "<group>"; };
+		20DE0BC6214D556000F90AA1 /* DirectoryNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryNavigationViewController.h; sourceTree = "<group>"; };
+		20DE0BC7214D556000F90AA1 /* AIFilePreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFilePreviewController.m; sourceTree = "<group>"; };
+		20DE0BC9214D556000F90AA1 /* AIFileTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFileTableViewCell.h; sourceTree = "<group>"; };
+		20DE0BCA214D556000F90AA1 /* AIFilePreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFilePreviewController.h; sourceTree = "<group>"; };
+		20DE0BCB214D556000F90AA1 /* AITextPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITextPreviewController.h; sourceTree = "<group>"; };
+		20DE0BCC214D556000F90AA1 /* AIPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPhotoPreviewController.h; sourceTree = "<group>"; };
+		20DE0BCF214D556000F90AA1 /* AITextPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AITextPreviewController.m; sourceTree = "<group>"; };
+		20DE0BD1214D556100F90AA1 /* AIPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIPhotoPreviewController.m; sourceTree = "<group>"; };
+		20DE0BD2214D556100F90AA1 /* AIInputFilenameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIInputFilenameViewController.m; sourceTree = "<group>"; };
+		20DE0BD3214D556100F90AA1 /* DirectoryNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryNavigationViewController.m; sourceTree = "<group>"; };
+		20DE0BD6214D556100F90AA1 /* AIFileTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFileTableViewCell.m; sourceTree = "<group>"; };
+		20DE0BE3214D55E100F90AA1 /* AIHttpVerb+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIHttpVerb+Private.h"; sourceTree = "<group>"; };
+		20DE0BE4214D55E100F90AA1 /* AIProgress.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AIProgress.mm; sourceTree = "<group>"; };
+		20DE0BE5214D55E100F90AA1 /* AIWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIWorker.h; sourceTree = "<group>"; };
+		20DE0BE6214D55E200F90AA1 /* AIProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIProgress.h; sourceTree = "<group>"; };
+		20DE0BE7214D55E200F90AA1 /* AIFileType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFileType.h; sourceTree = "<group>"; };
+		20DE0BE8214D55E200F90AA1 /* AIOsIo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIOsIo.h; sourceTree = "<group>"; };
+		20DE0BE9214D55E200F90AA1 /* AIWorker+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIWorker+Private.h"; sourceTree = "<group>"; };
+		20DE0BEA214D55E200F90AA1 /* AILongResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILongResult.h; sourceTree = "<group>"; };
+		20DE0BEB214D55E200F90AA1 /* AIHttpProgressResult+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIHttpProgressResult+Private.h"; sourceTree = "<group>"; };
+		20DE0BEC214D55E200F90AA1 /* AIFilesDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFilesDetail.h; sourceTree = "<group>"; };
+		20DE0BED214D55E200F90AA1 /* AIDirectoryView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIDirectoryView+Private.h"; sourceTree = "<group>"; };
+		20DE0BEE214D55E200F90AA1 /* AIFilesDetail.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AIFilesDetail.mm; sourceTree = "<group>"; };
+		20DE0BEF214D55E200F90AA1 /* AIFilesDetail+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIFilesDetail+Private.mm"; sourceTree = "<group>"; };
+		20DE0BF0214D55E300F90AA1 /* AIPortal+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIPortal+Private.mm"; sourceTree = "<group>"; };
+		20DE0BF1214D55E300F90AA1 /* AIProgress+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIProgress+Private.mm"; sourceTree = "<group>"; };
+		20DE0BF2214D55E300F90AA1 /* AIDirectoriesDetail+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIDirectoriesDetail+Private.mm"; sourceTree = "<group>"; };
+		20DE0BF3214D55E300F90AA1 /* AIHttpProgressResult+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIHttpProgressResult+Private.mm"; sourceTree = "<group>"; };
+		20DE0BF4214D55E300F90AA1 /* AIHttpProgressResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHttpProgressResult.h; sourceTree = "<group>"; };
+		20DE0BF5214D55E300F90AA1 /* AITask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITask.h; sourceTree = "<group>"; };
+		20DE0BF6214D55E300F90AA1 /* AIHttpVerb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHttpVerb.h; sourceTree = "<group>"; };
+		20DE0BF7214D55E400F90AA1 /* AIOsIo+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIOsIo+Private.h"; sourceTree = "<group>"; };
+		20DE0BF8214D55E400F90AA1 /* AILongResult+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AILongResult+Private.h"; sourceTree = "<group>"; };
+		20DE0BF9214D55E400F90AA1 /* AIOsIo+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIOsIo+Private.mm"; sourceTree = "<group>"; };
+		20DE0BFA214D55E400F90AA1 /* AIWorker+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIWorker+Private.mm"; sourceTree = "<group>"; };
+		20DE0BFB214D55E400F90AA1 /* AITask+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AITask+Private.mm"; sourceTree = "<group>"; };
+		20DE0BFC214D55E400F90AA1 /* AITask+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AITask+Private.h"; sourceTree = "<group>"; };
+		20DE0BFD214D55E500F90AA1 /* AIBoolResult+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIBoolResult+Private.mm"; sourceTree = "<group>"; };
+		20DE0BFE214D55E500F90AA1 /* AIHeader+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIHeader+Private.mm"; sourceTree = "<group>"; };
+		20DE0BFF214D55E500F90AA1 /* AIDirectoryView+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIDirectoryView+Private.mm"; sourceTree = "<group>"; };
+		20DE0C00214D55E500F90AA1 /* AIPortal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPortal.h; sourceTree = "<group>"; };
+		20DE0C01214D55E500F90AA1 /* AIDirectoriesDetail.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AIDirectoriesDetail.mm; sourceTree = "<group>"; };
+		20DE0C02214D55E600F90AA1 /* AIHeader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AIHeader.mm; sourceTree = "<group>"; };
+		20DE0C03214D55E600F90AA1 /* AIPortal+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIPortal+Private.h"; sourceTree = "<group>"; };
+		20DE0C04214D55E600F90AA1 /* AIFileState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFileState.h; sourceTree = "<group>"; };
+		20DE0C05214D55E600F90AA1 /* AIBoolResult+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIBoolResult+Private.h"; sourceTree = "<group>"; };
+		20DE0C06214D55E600F90AA1 /* AIDirectoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDirectoryView.h; sourceTree = "<group>"; };
+		20DE0C07214D55E700F90AA1 /* AILongResult+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AILongResult+Private.mm"; sourceTree = "<group>"; };
+		20DE0C08214D55E700F90AA1 /* AIDirectoriesDetail+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIDirectoriesDetail+Private.h"; sourceTree = "<group>"; };
+		20DE0C09214D55E700F90AA1 /* AIFilesDetail+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIFilesDetail+Private.h"; sourceTree = "<group>"; };
+		20DE0C0A214D55E700F90AA1 /* AIFileState+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIFileState+Private.h"; sourceTree = "<group>"; };
+		20DE0C0B214D55E800F90AA1 /* AIFileType+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIFileType+Private.h"; sourceTree = "<group>"; };
+		20DE0C0C214D55E800F90AA1 /* AIHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHeader.h; sourceTree = "<group>"; };
+		20DE0C0D214D55E800F90AA1 /* AIProgress+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIProgress+Private.h"; sourceTree = "<group>"; };
+		20DE0C0E214D55E800F90AA1 /* AIHttpResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHttpResult.h; sourceTree = "<group>"; };
+		20DE0C0F214D55E900F90AA1 /* AIHttpResult+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIHttpResult+Private.mm"; sourceTree = "<group>"; };
+		20DE0C10214D55E900F90AA1 /* AIBoolResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBoolResult.h; sourceTree = "<group>"; };
+		20DE0C11214D55E900F90AA1 /* AIHeader+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIHeader+Private.h"; sourceTree = "<group>"; };
+		20DE0C12214D55E900F90AA1 /* AIHttpResult+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIHttpResult+Private.h"; sourceTree = "<group>"; };
+		20DE0C13214D55E900F90AA1 /* AIDirectoriesDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDirectoriesDetail.h; sourceTree = "<group>"; };
+		20DE0C26214D569600F90AA1 /* directory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = directory.cpp; sourceTree = "<group>"; };
+		20DE0C27214D569600F90AA1 /* caching_engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = caching_engine.cpp; sourceTree = "<group>"; };
+		20DE0C2B214D56B200F90AA1 /* openstack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = openstack.cpp; sourceTree = "<group>"; };
+		20DE0C2E214D56E500F90AA1 /* portal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = portal.cpp; sourceTree = "<group>"; };
+		20DE0C2F214D56E500F90AA1 /* std_plat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = std_plat.cpp; sourceTree = "<group>"; };
+		20DF1F5922ADAE6500FA8F2F /* directory_notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = directory_notification.h; sourceTree = "<group>"; };
+		20DFC9E022BE779800F084ED /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		20DFC9E722BEAF7900F084ED /* AIStoreViewmodel+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIStoreViewmodel+Private.mm"; sourceTree = "<group>"; };
+		20DFC9E822BEAF7900F084ED /* AIStoreViewmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStoreViewmodel.h; sourceTree = "<group>"; };
+		20DFC9E922BEAF7900F084ED /* AIStoreViewmodel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIStoreViewmodel+Private.h"; sourceTree = "<group>"; };
+		20E34F022202AD0A000B53CD /* plat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plat.h; sourceTree = "<group>"; };
+		20E34F032202AE5F000B53CD /* portal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portal.h; sourceTree = "<group>"; };
+		20E34F042202B2F3000B53CD /* directory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = directory.h; sourceTree = "<group>"; };
+		20E43CE222AD4E6D00A0361E /* folder_subviewmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = folder_subviewmodel.h; sourceTree = "<group>"; };
+		20E4637422B6134700BF8B2B /* AIDiagnostic+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIDiagnostic+Private.h"; sourceTree = "<group>"; };
+		20E4637522B6134700BF8B2B /* AIDiagnostic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDiagnostic.h; sourceTree = "<group>"; };
+		20E4637622B6134800BF8B2B /* AIDiagnostic+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIDiagnostic+Private.mm"; sourceTree = "<group>"; };
+		20E4637822B61DED00BF8B2B /* AIFileItemDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFileItemDetail.h; sourceTree = "<group>"; };
+		20E4637922B61DED00BF8B2B /* AIFileItemDetail.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AIFileItemDetail.mm; sourceTree = "<group>"; };
+		20E4637A22B61DED00BF8B2B /* AIFileItemDetail+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIFileItemDetail+Private.h"; sourceTree = "<group>"; };
+		20E4637B22B61DED00BF8B2B /* AIFileItemDetail+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIFileItemDetail+Private.mm"; sourceTree = "<group>"; };
+		20E4637E22B61DF800BF8B2B /* AIFolderItemDetail+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIFolderItemDetail+Private.mm"; sourceTree = "<group>"; };
+		20E4637F22B61DF800BF8B2B /* AIFolderItemDetail+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIFolderItemDetail+Private.h"; sourceTree = "<group>"; };
+		20E4638022B61DF800BF8B2B /* AIFolderItemDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFolderItemDetail.h; sourceTree = "<group>"; };
+		20E4638122B61DF900BF8B2B /* AIFolderItemDetail.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AIFolderItemDetail.mm; sourceTree = "<group>"; };
+		20E4638422B64B9900BF8B2B /* AIThumbnails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIThumbnails.h; sourceTree = "<group>"; };
+		20E4638522B64B9900BF8B2B /* AIThumbnails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIThumbnails.m; sourceTree = "<group>"; };
+		20E619A8220149B0007B117C /* caching_engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = caching_engine.h; sourceTree = "<group>"; };
+		20E94F2421C9DBAA00FB718B /* AIUrlSessionCancellationToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIUrlSessionCancellationToken.h; sourceTree = "<group>"; };
+		20E94F2521C9DBAA00FB718B /* AIUrlSessionCancellationToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIUrlSessionCancellationToken.m; sourceTree = "<group>"; };
+		20EDC6B322BE32630029254D /* AIProduct+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIProduct+Private.h"; sourceTree = "<group>"; };
+		20EDC6B622BE32640029254D /* AIProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIProduct.h; sourceTree = "<group>"; };
+		20EDC6B722BE32640029254D /* AIProduct+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIProduct+Private.mm"; sourceTree = "<group>"; };
+		20EDC6B822BE32640029254D /* AIProduct.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AIProduct.mm; sourceTree = "<group>"; };
+		20EF45BE2185797600E4D64C /* AIBinaryResult+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIBinaryResult+Private.h"; sourceTree = "<group>"; };
+		20EF45BF2185797700E4D64C /* AIBinaryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBinaryResult.h; sourceTree = "<group>"; };
+		20EF45C02185797700E4D64C /* AIBinaryResult+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIBinaryResult+Private.mm"; sourceTree = "<group>"; };
+		20F2E7C321C91302003A2986 /* AICancellationToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AICancellationToken.h; sourceTree = "<group>"; };
+		20F2E7C421C91302003A2986 /* AICancellationToken+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AICancellationToken+Private.mm"; sourceTree = "<group>"; };
+		20F2E7C521C91302003A2986 /* AICancellationToken+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AICancellationToken+Private.h"; sourceTree = "<group>"; };
+		20F2E7C721C91315003A2986 /* AIStringsResult+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "AIStringsResult+Private.mm"; sourceTree = "<group>"; };
+		20F2E7C821C91315003A2986 /* AIStringsResult+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIStringsResult+Private.h"; sourceTree = "<group>"; };
+		20F2E7C921C91315003A2986 /* AIStringsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStringsResult.h; sourceTree = "<group>"; };
+		20FF7CD122AEDABA004C4C8C /* content.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = content.h; sourceTree = "<group>"; };
+		20FF7CD222AEDB77004C4C8C /* content.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = content.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		203A52272117519C00893D6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		203A5239211754D200893D6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20DB5047227B64D200BEA8B0 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		201344092247A07C0032C70E /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				2013440B2247A0C20032C70E /* BCCKeychain.h */,
+				2013440A2247A0C20032C70E /* BCCKeychain.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		202D3E9922B80356007C5828 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				202D3E9A22B8039C007C5828 /* about_viewmodel.h */,
+				2091F23E22D9D4D3007335CF /* viewlog_viewmodel.h */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		202D3EA322B86519007C5828 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				202D3EA422B86547007C5828 /* edit_profile_viewmodel.h */,
+				208E967322CAAAE100A586CD /* change_password_viewmodel.h */,
+				208E967522CAB1B500A586CD /* change_forumname_viewmodel.h */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		202D3EA522B88C66007C5828 /* plan */ = {
+			isa = PBXGroup;
+			children = (
+				202D3EA622B88C8D007C5828 /* upgrade_viewmodel.h */,
+				20C10B8922DA0A30002A9E8C /* store_interface.h */,
+				20C10B8A22DA0B40002A9E8C /* store_proxy.h */,
+			);
+			path = plan;
+			sourceTree = "<group>";
+		};
+		203669CF22AE742600E2B034 /* loading */ = {
+			isa = PBXGroup;
+			children = (
+				205F61A122AD6F6600FE806B /* loading_subviewmodel.h */,
+			);
+			path = loading;
+			sourceTree = "<group>";
+		};
+		203A52212117519C00893D6A = {
+			isa = PBXGroup;
+			children = (
+				203A522C2117519C00893D6A /* CloudStore */,
+				203A523D211754D200893D6A /* CloudStoreMobile */,
+				203A522B2117519C00893D6A /* Products */,
+				20EBF947212AFC55007F92DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		203A522B2117519C00893D6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				203A522A2117519C00893D6A /* CloudStore */,
+				203A523C211754D200893D6A /* CloudStoreMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		203A522C2117519C00893D6A /* CloudStore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CloudStore;
+			path = ../../../mobile;
+			sourceTree = "<group>";
+		};
+		203A523D211754D200893D6A /* CloudStoreMobile */ = {
+			isa = PBXGroup;
+			children = (
+				20DE0BE0214D55B000F90AA1 /* Bridge */,
+				20A8AD66222BD44B003BF5DF /* CloudStoreMobile.entitlements */,
+				20DE0C25214D564000F90AA1 /* Core */,
+				205F619C22AD64EB00FE806B /* View */,
+				20DE0BA6214D54E300F90AA1 /* Impl */,
+				203A5253211755A800893D6A /* Djinni */,
+				203A523E211754D200893D6A /* AppDelegate.h */,
+				203A523F211754D200893D6A /* AppDelegate.m */,
+				203A5247211754D200893D6A /* Assets.xcassets */,
+				203A5249211754D200893D6A /* LaunchScreen.storyboard */,
+				203A524C211754D200893D6A /* Info.plist */,
+				203A524D211754D200893D6A /* main.mm */,
+				2081BA232135D37E005F9168 /* AITheme.h */,
+				2081BA242135D37E005F9168 /* AITheme.m */,
+			);
+			path = CloudStoreMobile;
+			sourceTree = "<group>";
+		};
+		203A5253211755A800893D6A /* Djinni */ = {
+			isa = PBXGroup;
+			children = (
+				2045FB5E2118AE170047E339 /* DJICppWrapperCache+Private.h */,
+				2045FB5D2118AE170047E339 /* DJIError.h */,
+				2045FB5C2118AE160047E339 /* DJIError.mm */,
+				2045FB602118AE170047E339 /* DJIMarshal+Private.h */,
+				2045FB5F2118AE170047E339 /* DJIObjcWrapperCache+Private.h */,
+				2045FB612118AE170047E339 /* DJIProxyCaches.mm */,
+			);
+			name = Djinni;
+			path = "../../../deps/djinni/support-lib/objc";
+			sourceTree = SOURCE_ROOT;
+		};
+		203D38BB22A2A33E000AF408 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				203D38BC22A2A35E000AF408 /* Fields */,
+				203D38E122A2A3CE000AF408 /* AIBaseForm.h */,
+				203D38D722A2A3CE000AF408 /* AIBaseForm.m */,
+				203D38DE22A2A3CE000AF408 /* AIBaseFormViewController.h */,
+				203D38DA22A2A3CE000AF408 /* AIBaseFormViewController.m */,
+				203D38F022A2A3CF000AF408 /* AIConfirmController.h */,
+				203D38E322A2A3CE000AF408 /* AIConfirmController.m */,
+				203D38E722A2A3CF000AF408 /* AIHelp.h */,
+				203D38DD22A2A3CE000AF408 /* AIHelp.m */,
+				203D38E422A2A3CE000AF408 /* AIImage.h */,
+				203D38D522A2A3CE000AF408 /* AIImage.m */,
+				203D38DB22A2A3CE000AF408 /* AIMultilineButton.h */,
+				203D38E222A2A3CE000AF408 /* AIMultilineButton.m */,
+				203D38ED22A2A3CF000AF408 /* AIPhoneFormController.h */,
+				203D38EF22A2A3CF000AF408 /* AIPhoneFormController.m */,
+				203D38DC22A2A3CE000AF408 /* AIPickerController.h */,
+				203D38D822A2A3CE000AF408 /* AIPickerController.m */,
+				203D38E922A2A3CF000AF408 /* AIStarRatingView.h */,
+				203D38E822A2A3CF000AF408 /* AIStarRatingView.m */,
+				203D38D622A2A3CE000AF408 /* AITextField.h */,
+				203D38EB22A2A3CF000AF408 /* AITextField.m */,
+				203D38E522A2A3CE000AF408 /* AIVerticalSpace.h */,
+				203D38EE22A2A3CF000AF408 /* AIVerticalSpace.m */,
+				203D38BD22A2A380000AF408 /* Protocols */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		203D38BC22A2A35E000AF408 /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				20BB59AF22A2AEE90025927D /* AITextInput.h */,
+				20BB59AE22A2AEE90025927D /* AITextInput.m */,
+				203D38C222A2A3B6000AF408 /* AIBooleanInput.h */,
+				203D38C922A2A3B7000AF408 /* AIBooleanInput.m */,
+				203D38C722A2A3B6000AF408 /* AIButton.h */,
+				203D38C422A2A3B6000AF408 /* AIButton.m */,
+				203D38C122A2A3B6000AF408 /* AIHelpElement.h */,
+				203D38C022A2A3B6000AF408 /* AIHelpElement.m */,
+				203D38CD22A2A3B7000AF408 /* AIMultilineTextInput.h */,
+				203D38CC22A2A3B7000AF408 /* AIMultilineTextInput.m */,
+				203D38C322A2A3B6000AF408 /* AIPicker.h */,
+				203D38CA22A2A3B7000AF408 /* AIPicker.m */,
+				203D38C522A2A3B6000AF408 /* AIText.h */,
+				203D38CB22A2A3B7000AF408 /* AIText.m */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+		203D38BD22A2A380000AF408 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				203D38BF22A2A3A7000AF408 /* AIInputElement.h */,
+				203D38BE22A2A3A7000AF408 /* AIValidatedForm.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		205EA82E21D65A4A008BBE32 /* gui */ = {
+			isa = PBXGroup;
+			children = (
+				205EA83021D65A6D008BBE32 /* about_form.h */,
+				205EA83121D65A6D008BBE32 /* confirm_form.h */,
+				205EA82F21D65A6D008BBE32 /* login_form.h */,
+			);
+			path = gui;
+			sourceTree = "<group>";
+		};
+		205F619C22AD64EB00FE806B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				205F619D22AD653A00FE806B /* CloudStore */,
+				203D38BB22A2A33E000AF408 /* Form */,
+				20395A1C22A3A9B500E4E156 /* AIViewController.h */,
+				20395A1D22A3A9B500E4E156 /* AIViewController.m */,
+				20A4D96522A40B1300E9E1C7 /* AINavigationController.h */,
+				20A4D96622A40B1300E9E1C7 /* AINavigationController.m */,
+				2077D89422A99C6E00D95DE3 /* AIRootController.h */,
+				2077D89522A99C6E00D95DE3 /* AIRootController.m */,
+				20B52C1422B0B69200C3AF20 /* AIToolbarController.h */,
+				20B52C1522B0B69200C3AF20 /* AIToolbarController.m */,
+				20BFCEDA22B507BF00B9C5A7 /* AIUIThreadRunner.h */,
+				20BFCEDB22B507BF00B9C5A7 /* AIUIThreadRunner.m */,
+				20E4638422B64B9900BF8B2B /* AIThumbnails.h */,
+				20E4638522B64B9900BF8B2B /* AIThumbnails.m */,
+			);
+			name = View;
+			path = ../../../../src/platform/ios/View;
+			sourceTree = "<group>";
+		};
+		205F619D22AD653A00FE806B /* CloudStore */ = {
+			isa = PBXGroup;
+			children = (
+				205F619E22AD664400FE806B /* AIFolderController.h */,
+				205F619F22AD664400FE806B /* AIFolderController.m */,
+				20CD817C22B5417F0065613A /* AIPhotoController.h */,
+				20CD817D22B5417F0065613A /* AIPhotoController.m */,
+				20CD818822B57E1C0065613A /* AIVideoController.h */,
+				20CD818922B57E1C0065613A /* AIVideoController.m */,
+				20CD818B22B58B850065613A /* AITextController.h */,
+				20CD818C22B58B850065613A /* AITextController.m */,
+			);
+			path = CloudStore;
+			sourceTree = "<group>";
+		};
+		2072C5ED22A3C61400D72B71 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				202D3EA522B88C66007C5828 /* plan */,
+				202D3EA322B86519007C5828 /* user */,
+				202D3E9922B80356007C5828 /* settings */,
+				203669CF22AE742600E2B034 /* loading */,
+				20E43CE122AD4E2D00A0361E /* cache */,
+				20C0DA6022A4191F000C1127 /* signin */,
+				2072C5EF22A3C63500D72B71 /* globals.h */,
+				2072C5EE22A3C63500D72B71 /* ui.h */,
+				2072C5F022A3C63500D72B71 /* viewmodel.h */,
+				2072C5F222A3C64400D72B71 /* root_viewmodel.h */,
+				2072C5F322A3C7A500D72B71 /* root_viewmodel.cpp */,
+				2072C5F922A3D3E500D72B71 /* user_viewmodel.h */,
+				2072C5FA22A3D3FE00D72B71 /* settings_viewmodel.h */,
+				2072C5FB22A3D41600D72B71 /* plan_viewmodel.h */,
+				2072C5FC22A3D81800D72B71 /* signin_viewmodel.h */,
+				202D3E9B22B82524007C5828 /* user_viewmodel.cpp */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		2072C5F522A3CA2F00D72B71 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2072C5F622A3CC5F00D72B71 /* services.h */,
+				2072C5F722A3CE6400D72B71 /* model.h */,
+				20C0DA6322A45172000C1127 /* model.cpp */,
+				20DF1F5922ADAE6500FA8F2F /* directory_notification.h */,
+				20CA8EB122D9BD8400C6EF58 /* custom_platform.h */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2082996D2247E32B00B884FD /* RenameFile */ = {
+			isa = PBXGroup;
+			children = (
+				2082996E2247E39E00B884FD /* AIRenameFile.h */,
+				2082996F2247E39E00B884FD /* AIRenameFile.m */,
+			);
+			name = RenameFile;
+			path = ../visual/RenameFile;
+			sourceTree = "<group>";
+		};
+		20A2188121CB800500C9CF48 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				202D2AE121D5FE9800ECAE6C /* AIAccountScreen.h */,
+				202D2AE221D5FE9800ECAE6C /* AIAccountScreen.m */,
+				202D2AE421D6247800ECAE6C /* AIAccountActions.h */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		20A2188521CB804600C9CF48 /* Directory */ = {
+			isa = PBXGroup;
+			children = (
+				20DE0BCA214D556000F90AA1 /* AIFilePreviewController.h */,
+				20DE0BC7214D556000F90AA1 /* AIFilePreviewController.m */,
+				20DE0BC9214D556000F90AA1 /* AIFileTableViewCell.h */,
+				20DE0BD6214D556100F90AA1 /* AIFileTableViewCell.m */,
+				20DE0BC5214D555F00F90AA1 /* AIInputFilenameViewController.h */,
+				20DE0BD2214D556100F90AA1 /* AIInputFilenameViewController.m */,
+				20DE0BCC214D556000F90AA1 /* AIPhotoPreviewController.h */,
+				20DE0BD1214D556100F90AA1 /* AIPhotoPreviewController.m */,
+				20DE0BCB214D556000F90AA1 /* AITextPreviewController.h */,
+				20DE0BCF214D556000F90AA1 /* AITextPreviewController.m */,
+				20DE0BC6214D556000F90AA1 /* DirectoryNavigationViewController.h */,
+				20DE0BD3214D556100F90AA1 /* DirectoryNavigationViewController.m */,
+				20846722215657FD007F67C0 /* AIFilesDetailView.h */,
+				20846723215657FD007F67C0 /* AIFilesDetailView.m */,
+				20AC50A921D76AFE0056C424 /* AIDirectoryList.h */,
+				20AC50AA21D76AFE0056C424 /* AIDirectoryList.m */,
+				20AC50AC21D76FE70056C424 /* AIFileCollectionViewCell.h */,
+				20AC50AD21D76FE70056C424 /* AIFileCollectionViewCell.m */,
+				20AC50AF21D777940056C424 /* AIDirCollectionViewCell.h */,
+				20AC50B021D777940056C424 /* AIDirCollectionViewCell.m */,
+				208D009C2206F86A0010ED7D /* AIVideoPreviewController.h */,
+				208D009D2206F86A0010ED7D /* AIVideoPreviewController.m */,
+			);
+			path = Directory;
+			sourceTree = "<group>";
+		};
+		20AF38112207805600AD8F70 /* CreateFolder */ = {
+			isa = PBXGroup;
+			children = (
+				20AF38122207809500AD8F70 /* AICreateFolderScreen.h */,
+				20AF38132207809500AD8F70 /* AICreateFolderScreen.m */,
+			);
+			path = CreateFolder;
+			sourceTree = "<group>";
+		};
+		20BBCF9B22492BFE00D27FB6 /* RenameFolder */ = {
+			isa = PBXGroup;
+			children = (
+				20BBCF9C22492C4800D27FB6 /* AIRenameFolder.h */,
+				20BBCF9D22492C4800D27FB6 /* AIRenameFolder.m */,
+			);
+			name = RenameFolder;
+			path = ../visual/RenameFolder;
+			sourceTree = "<group>";
+		};
+		20C0DA6022A4191F000C1127 /* signin */ = {
+			isa = PBXGroup;
+			children = (
+				203DFCF422B69BA500CAB3C7 /* forgot_viewmodel.h */,
+				20C0DA6222A42141000C1127 /* signup_subviewmodel.h */,
+				20B1EBB322BAC4E500CF644C /* signup_subviewmodel.cpp */,
+				048C058D22F0B3BD00E4EBB2 /* signup_success_vm.h */,
+			);
+			path = signin;
+			sourceTree = "<group>";
+		};
+		20C9BCAC22630EAB0086183C /* IQMediaPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				20C9BCAD22630EAB0086183C /* IQMediaPickerController.m */,
+				20C9BCE422630EAB0086183C /* IQMediaPickerSelection.m */,
+				20C9BCE522630EAB0086183C /* UIImage+IQMediaPickerController.h */,
+				20C9BCE622630EAB0086183C /* IQAudioPickerController */,
+				20C9BD0722630EAB0086183C /* IQMediaPickerController.h */,
+				20C9BD0822630EAB0086183C /* IQAssetsPickerController */,
+				20C9BD1722630EAB0086183C /* IQMediaPickerSelection.h */,
+				20C9BD1822630EAB0086183C /* UIImage+IQMediaPickerController.m */,
+			);
+			name = IQMediaPickerController;
+			path = ../visual/IQMediaPickerController;
+			sourceTree = "<group>";
+		};
+		20C9BCE622630EAB0086183C /* IQAudioPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				20C9BCE722630EAB0086183C /* IQAudioPickerController.h */,
+				20C9BCE822630EAB0086183C /* IQAudioPickerController.m */,
+				20C9BCE922630EAB0086183C /* IQAudioPickerController.xcassets */,
+				20C9BCEA22630EAB0086183C /* IQAudioPIckerViewControllers */,
+				20C9BD0422630EAB0086183C /* IQAudioPickerUtility */,
+			);
+			path = IQAudioPickerController;
+			sourceTree = "<group>";
+		};
+		20C9BCEA22630EAB0086183C /* IQAudioPIckerViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				20C9BCEB22630EAB0086183C /* IQSongsPlaylistViewController.h */,
+				20C9BCEC22630EAB0086183C /* IQSongsAlbumListViewController.m */,
+				20C9BCED22630EAB0086183C /* IQSongsGenreViewController.m */,
+				20C9BCEE22630EAB0086183C /* IQSongsArtistListViewController.h */,
+				20C9BCEF22630EAB0086183C /* IQSongsComposersViewController.h */,
+				20C9BCF022630EAB0086183C /* IQSongsListViewController.m */,
+				20C9BCF122630EAB0086183C /* IQSongsCompilationsViewController.m */,
+				20C9BCF222630EAB0086183C /* IQAudioPickerTableViewHeader */,
+				20C9BCF522630EAB0086183C /* IQSongsGenreViewController.h */,
+				20C9BCF622630EAB0086183C /* IQSongsAlbumListViewController.h */,
+				20C9BCF722630EAB0086183C /* IQSongsPlaylistViewController.m */,
+				20C9BCF822630EAB0086183C /* IQSongsArtistListViewController.m */,
+				20C9BCF922630EAB0086183C /* IQAudioPickerTableViewCell */,
+				20C9BCFE22630EAB0086183C /* IQSongsComposersViewController.m */,
+				20C9BCFF22630EAB0086183C /* IQAudioCellShadowView */,
+				20C9BD0222630EAB0086183C /* IQSongsCompilationsViewController.h */,
+				20C9BD0322630EAB0086183C /* IQSongsListViewController.h */,
+			);
+			path = IQAudioPIckerViewControllers;
+			sourceTree = "<group>";
+		};
+		20C9BCF222630EAB0086183C /* IQAudioPickerTableViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				20C9BCF322630EAB0086183C /* IQSongsListTableHeaderView.h */,
+				20C9BCF422630EAB0086183C /* IQSongsListTableHeaderView.m */,
+			);
+			path = IQAudioPickerTableViewHeader;
+			sourceTree = "<group>";
+		};
+		20C9BCF922630EAB0086183C /* IQAudioPickerTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				20C9BCFA22630EAB0086183C /* IQSongsCell.h */,
+				20C9BCFB22630EAB0086183C /* IQSongsAlbumViewCell.h */,
+				20C9BCFC22630EAB0086183C /* IQSongsCell.m */,
+				20C9BCFD22630EAB0086183C /* IQSongsAlbumViewCell.m */,
+			);
+			path = IQAudioPickerTableViewCell;
+			sourceTree = "<group>";
+		};
+		20C9BCFF22630EAB0086183C /* IQAudioCellShadowView */ = {
+			isa = PBXGroup;
+			children = (
+				20C9BD0022630EAB0086183C /* IQAudioPickerShadowView.h */,
+				20C9BD0122630EAB0086183C /* IQAudioPickerShadowView.m */,
+			);
+			path = IQAudioCellShadowView;
+			sourceTree = "<group>";
+		};
+		20C9BD0422630EAB0086183C /* IQAudioPickerUtility */ = {
+			isa = PBXGroup;
+			children = (
+				20C9BD0522630EAB0086183C /* IQAudioPickerUtility.h */,
+				20C9BD0622630EAB0086183C /* IQAudioPickerUtility.m */,
+			);
+			path = IQAudioPickerUtility;
+			sourceTree = "<group>";
+		};
+		20C9BD0822630EAB0086183C /* IQAssetsPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				20C9BD0922630EAB0086183C /* IQAlbumAssetsViewController.m */,
+				20C9BD0A22630EAB0086183C /* IQAssetsPickerController.h */,
+				20C9BD0B22630EAB0086183C /* IQAssetPickerView */,
+				20C9BD1022630EAB0086183C /* IQAssetPickerCell */,
+				20C9BD1522630EAB0086183C /* IQAlbumAssetsViewController.h */,
+				20C9BD1622630EAB0086183C /* IQAssetsPickerController.m */,
+			);
+			path = IQAssetsPickerController;
+			sourceTree = "<group>";
+		};
+		20C9BD0B22630EAB0086183C /* IQAssetPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				20C9BD0C22630EAB0086183C /* IQAssetsPickerShadowView.h */,
+				20C9BD0D22630EAB0086183C /* IQCheckmarkView.h */,
+				20C9BD0E22630EAB0086183C /* IQCheckmarkView.m */,
+				20C9BD0F22630EAB0086183C /* IQAssetsPickerShadowView.m */,
+			);
+			path = IQAssetPickerView;
+			sourceTree = "<group>";
+		};
+		20C9BD1022630EAB0086183C /* IQAssetPickerCell */ = {
+			isa = PBXGroup;
+			children = (
+				20C9BD1122630EAB0086183C /* IQAssetsAlbumViewCell.h */,
+				20C9BD1222630EAB0086183C /* IQAssetsCell.h */,
+				20C9BD1322630EAB0086183C /* IQAssetsAlbumViewCell.m */,
+				20C9BD1422630EAB0086183C /* IQAssetsCell.m */,
+			);
+			path = IQAssetPickerCell;
+			sourceTree = "<group>";
+		};
+		20D13CC02280AFAC007F440F /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				20D13CC12280AFEE007F440F /* AITransactionObserver.h */,
+				20D13CC22280AFEE007F440F /* AITransactionObserver.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		20D8ECEE218E0F4A00946EBE /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				20D8ECE8218DFAC900946EBE /* AIFormViewController.h */,
+				20D8ECE9218DFAC900946EBE /* AIFormViewController.mm */,
+				20D8ECEF218E0F8C00946EBE /* AITextInputx.h */,
+				20D8ECF0218E0F8C00946EBE /* AITextInputx.m */,
+				207F7421218F3E3B001546AC /* AITextFieldx.h */,
+				207F7422218F3E3B001546AC /* AITextFieldx.m */,
+				207F7424218F5A8B001546AC /* AIInteractiveElement.h */,
+				207F7425218F5BBD001546AC /* AIInputElement.h */,
+				207F7426218F5F45001546AC /* AIButtonx.h */,
+				207F7427218F5F45001546AC /* AIButtonx.m */,
+				203D701921CA894200EBB2D3 /* AIBooleanInputx.h */,
+				203D701A21CA894200EBB2D3 /* AIBooleanInputx.m */,
+				20AF380E22077EE600AD8F70 /* ActionResult.h */,
+				20AF380F22077EE600AD8F70 /* ActionResult.m */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		20DE0BA6214D54E300F90AA1 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				20D13CC02280AFAC007F440F /* Store */,
+				201344092247A07C0032C70E /* Security */,
+				20DE0BC4214D554800F90AA1 /* Visual */,
+				20DE0BB7214D552000F90AA1 /* PureLayout */,
+				20DE0BAF214D551A00F90AA1 /* AIDownloadContext.h */,
+				20DE0BAE214D551A00F90AA1 /* AIDownloadContext.m */,
+				20DE0BA7214D551900F90AA1 /* AIGCDWorker.h */,
+				20DE0BA8214D551900F90AA1 /* AIGCDWorker.m */,
+				20DE0BA9214D551A00F90AA1 /* AIHttpContext.h */,
+				20DE0BAC214D551A00F90AA1 /* AIHttpContext.m */,
+				20DE0BB0214D551A00F90AA1 /* AINameStore.h */,
+				20DE0BAB214D551A00F90AA1 /* AIOsIoImpl.h */,
+				20DE0BAA214D551A00F90AA1 /* AIOsIoImpl.m */,
+				20DE0BB1214D551A00F90AA1 /* AIUploadContext.h */,
+				20DE0BAD214D551A00F90AA1 /* AIUploadContext.m */,
+				20D8ECEB218E0B7200946EBE /* AIFonts.h */,
+				20D8ECEC218E0B7200946EBE /* AIFonts.m */,
+				20E94F2421C9DBAA00FB718B /* AIUrlSessionCancellationToken.h */,
+				20E94F2521C9DBAA00FB718B /* AIUrlSessionCancellationToken.m */,
+				202D3EA022B854EA007C5828 /* AICertCheck.h */,
+				202D3EA122B854EA007C5828 /* AICertCheck.m */,
+			);
+			name = Impl;
+			path = ../../../../src/platform/ios;
+			sourceTree = "<group>";
+		};
+		20DE0BB7214D552000F90AA1 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				20DE0BB8214D554000F90AA1 /* ALView+PureLayout.h */,
+				20DE0BB9214D554000F90AA1 /* ALView+PureLayout.m */,
+				20DE0BBA214D554000F90AA1 /* NSArray+PureLayout.h */,
+				20DE0BBB214D554100F90AA1 /* NSArray+PureLayout.m */,
+				20DE0BBF214D554100F90AA1 /* NSLayoutConstraint+PureLayout.h */,
+				20DE0BBE214D554100F90AA1 /* NSLayoutConstraint+PureLayout.m */,
+				20DE0BBD214D554100F90AA1 /* PureLayout.h */,
+				20DE0BBC214D554100F90AA1 /* PureLayout+Internal.h */,
+				20DE0BC0214D554100F90AA1 /* PureLayoutDefines.h */,
+			);
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		20DE0BC4214D554800F90AA1 /* Visual */ = {
+			isa = PBXGroup;
+			children = (
+				20C9BCAC22630EAB0086183C /* IQMediaPickerController */,
+				20BBCF9B22492BFE00D27FB6 /* RenameFolder */,
+				2082996D2247E32B00B884FD /* RenameFile */,
+				20AF38112207805600AD8F70 /* CreateFolder */,
+				20A2188521CB804600C9CF48 /* Directory */,
+				20A2188121CB800500C9CF48 /* Account */,
+				20D8ECEE218E0F4A00946EBE /* Form */,
+				2046E09D21846A2A006FB9E3 /* AILaunchController.h */,
+				2046E09E21846A2A006FB9E3 /* AILaunchController.m */,
+				20A2188621CBAEF800C9CF48 /* AIToolbarViewController.h */,
+				20A2188721CBAEF800C9CF48 /* AIToolbarViewController.m */,
+				20A2188921CBC03700C9CF48 /* AIToolbarViewControllerDelegate.h */,
+			);
+			path = Visual;
+			sourceTree = "<group>";
+		};
+		20DE0BE0214D55B000F90AA1 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				2004D4F922BFB7900057D8B4 /* AITransactionDetail.h */,
+				2004D4FC22BFB7900057D8B4 /* AITransactionDetail.mm */,
+				2004D4FA22BFB7900057D8B4 /* AITransactionDetail+Private.h */,
+				2004D4FD22BFB7900057D8B4 /* AITransactionDetail+Private.mm */,
+				2004D4FE22BFB7910057D8B4 /* AITransactionState.h */,
+				2004D4FB22BFB7900057D8B4 /* AITransactionState+Private.h */,
+				20DFC9E822BEAF7900F084ED /* AIStoreViewmodel.h */,
+				20DFC9E922BEAF7900F084ED /* AIStoreViewmodel+Private.h */,
+				20DFC9E722BEAF7900F084ED /* AIStoreViewmodel+Private.mm */,
+				20EDC6B622BE32640029254D /* AIProduct.h */,
+				20EDC6B822BE32640029254D /* AIProduct.mm */,
+				20EDC6B322BE32630029254D /* AIProduct+Private.h */,
+				20EDC6B722BE32640029254D /* AIProduct+Private.mm */,
+				203DFCF022B6573600CAB3C7 /* AIStateChange.h */,
+				203DFCEE22B6573600CAB3C7 /* AIStateChange.mm */,
+				203DFCF122B6573600CAB3C7 /* AIStateChange+Private.h */,
+				203DFCEF22B6573600CAB3C7 /* AIStateChange+Private.mm */,
+				20E4638022B61DF800BF8B2B /* AIFolderItemDetail.h */,
+				20E4638122B61DF900BF8B2B /* AIFolderItemDetail.mm */,
+				20E4637F22B61DF800BF8B2B /* AIFolderItemDetail+Private.h */,
+				20E4637E22B61DF800BF8B2B /* AIFolderItemDetail+Private.mm */,
+				20E4637822B61DED00BF8B2B /* AIFileItemDetail.h */,
+				20E4637922B61DED00BF8B2B /* AIFileItemDetail.mm */,
+				20E4637A22B61DED00BF8B2B /* AIFileItemDetail+Private.h */,
+				20E4637B22B61DED00BF8B2B /* AIFileItemDetail+Private.mm */,
+				20E4637522B6134700BF8B2B /* AIDiagnostic.h */,
+				20E4637422B6134700BF8B2B /* AIDiagnostic+Private.h */,
+				20E4637622B6134800BF8B2B /* AIDiagnostic+Private.mm */,
+				20CD818122B54A1E0065613A /* AIPreViewmodel.h */,
+				20CD817F22B54A1E0065613A /* AIPreViewmodel+Private.h */,
+				20CD818022B54A1E0065613A /* AIPreViewmodel+Private.mm */,
+				20BFCED822B5076400B9C5A7 /* AIUiCallback.h */,
+				20BFCED722B5076400B9C5A7 /* AIUiCallback+Private.h */,
+				20BFCED622B5076300B9C5A7 /* AIUiCallback+Private.mm */,
+				20BFCED022B4FCBA00B9C5A7 /* AIFormView.h */,
+				20BFCED122B4FCBB00B9C5A7 /* AIFormView+Private.h */,
+				20BFCECF22B4FCBA00B9C5A7 /* AIFormView+Private.mm */,
+				20BFCECC22B4E05500B9C5A7 /* AIFolderView.h */,
+				20BFCECB22B4E05500B9C5A7 /* AIFolderView+Private.h */,
+				20BFCECD22B4E05500B9C5A7 /* AIFolderView+Private.mm */,
+				2014245722B3F6CC00920278 /* AIRootViewmodel.h */,
+				2014245822B3F6CC00920278 /* AIRootViewmodel+Private.h */,
+				2014245922B3F6CC00920278 /* AIRootViewmodel+Private.mm */,
+				2014245222B3F6BB00920278 /* AIFolderViewmodel.h */,
+				2014245122B3F6BB00920278 /* AIFolderViewmodel+Private.h */,
+				2014244F22B3F6BA00920278 /* AIFolderViewmodel+Private.mm */,
+				2014245022B3F6BB00920278 /* AIFormViewmodel.h */,
+				2014245322B3F6BB00920278 /* AIFormViewmodel+Private.h */,
+				2014245422B3F6BB00920278 /* AIFormViewmodel+Private.mm */,
+				201F762022A3A6140079BAEA /* AIView.h */,
+				201F761F22A3A6140079BAEA /* AIView+Private.h */,
+				201F761E22A3A6130079BAEA /* AIView+Private.mm */,
+				2024D60E22A29AD60041FEF8 /* AIAlign.h */,
+				2024D60D22A29AD60041FEF8 /* AIAlign+Private.h */,
+				2024D61D22A29AD70041FEF8 /* AIBlock.h */,
+				2024D61A22A29AD70041FEF8 /* AIBlock.mm */,
+				2024D61F22A29AD70041FEF8 /* AIBlock+Private.h */,
+				2024D62722A29AD80041FEF8 /* AIBlock+Private.mm */,
+				2024D60822A29AD60041FEF8 /* AIColour.h */,
+				2024D60922A29AD60041FEF8 /* AIColour+Private.h */,
+				2024D60A22A29AD60041FEF8 /* AIDataType.h */,
+				2024D60C22A29AD60041FEF8 /* AIDataType+Private.h */,
+				2024D62022A29AD70041FEF8 /* AIField.h */,
+				2024D61422A29AD60041FEF8 /* AIField.mm */,
+				2024D62822A29AD80041FEF8 /* AIField+Private.h */,
+				2024D62622A29AD80041FEF8 /* AIField+Private.mm */,
+				2024D61522A29AD70041FEF8 /* AIFieldType.h */,
+				2024D62222A29AD70041FEF8 /* AIFieldType+Private.h */,
+				2024D61822A29AD70041FEF8 /* AIGenericForm.h */,
+				2024D61622A29AD70041FEF8 /* AIGenericForm+Private.h */,
+				2024D62922A29AD80041FEF8 /* AIGenericForm+Private.mm */,
+				2024D60622A29AD50041FEF8 /* AIReference.h */,
+				2024D62122A29AD70041FEF8 /* AIReference.mm */,
+				2024D61722A29AD70041FEF8 /* AIReference+Private.h */,
+				2024D60722A29AD60041FEF8 /* AIReference+Private.mm */,
+				2024D60F22A29AD60041FEF8 /* AIScreenType.h */,
+				2024D62422A29AD70041FEF8 /* AIScreenType+Private.h */,
+				2024D61C22A29AD70041FEF8 /* AISize.h */,
+				2024D61022A29AD60041FEF8 /* AISize+Private.h */,
+				2024D60B22A29AD60041FEF8 /* AIStyle.h */,
+				2024D61322A29AD60041FEF8 /* AIStyle.mm */,
+				2024D61222A29AD60041FEF8 /* AIStyle+Private.h */,
+				2024D61B22A29AD70041FEF8 /* AIStyle+Private.mm */,
+				2024D61122A29AD60041FEF8 /* AIWeight.h */,
+				2024D62322A29AD70041FEF8 /* AIWeight+Private.h */,
+				20AF0D09223502C900A21C26 /* AILogType.h */,
+				20AF0D0A223502CA00A21C26 /* AILogType+Private.h */,
+				20F2E7C921C91315003A2986 /* AIStringsResult.h */,
+				20F2E7C821C91315003A2986 /* AIStringsResult+Private.h */,
+				20F2E7C721C91315003A2986 /* AIStringsResult+Private.mm */,
+				20F2E7C321C91302003A2986 /* AICancellationToken.h */,
+				20F2E7C521C91302003A2986 /* AICancellationToken+Private.h */,
+				20F2E7C421C91302003A2986 /* AICancellationToken+Private.mm */,
+				20D8ECE5218DF87500946EBE /* AIIntResult.h */,
+				20D8ECE4218DF87500946EBE /* AIIntResult+Private.h */,
+				20D8ECE6218DF87500946EBE /* AIIntResult+Private.mm */,
+				20D8ECDF218DF85E00946EBE /* AIElement.h */,
+				20D8ECE0218DF85E00946EBE /* AIElement.mm */,
+				20D8ECE1218DF85E00946EBE /* AIElement+Private.h */,
+				20D8ECDC218DF85D00946EBE /* AIElement+Private.mm */,
+				20D8ECDE218DF85E00946EBE /* AIElementType.h */,
+				20D8ECDD218DF85D00946EBE /* AIElementType+Private.h */,
+				20EF45BF2185797700E4D64C /* AIBinaryResult.h */,
+				20EF45BE2185797600E4D64C /* AIBinaryResult+Private.h */,
+				20EF45C02185797700E4D64C /* AIBinaryResult+Private.mm */,
+				2046E091218461E8006FB9E3 /* AIStatus.h */,
+				2046E093218461E8006FB9E3 /* AIStatus+Private.h */,
+				2046E092218461E8006FB9E3 /* AIStringResult.h */,
+				2046E094218461E8006FB9E3 /* AIStringResult+Private.h */,
+				2046E095218461E8006FB9E3 /* AIStringResult+Private.mm */,
+				2046E087218461D8006FB9E3 /* AIMessage.h */,
+				2046E08A218461D8006FB9E3 /* AIMessage.mm */,
+				2046E089218461D8006FB9E3 /* AIMessage+Private.h */,
+				2046E08B218461D9006FB9E3 /* AIMessage+Private.mm */,
+				2046E086218461D7006FB9E3 /* AIOsForm.h */,
+				2046E088218461D8006FB9E3 /* AIOsForm+Private.h */,
+				2046E084218461D7006FB9E3 /* AIOsForm+Private.mm */,
+				2046E08C218461D9006FB9E3 /* AIOsGui.h */,
+				2046E083218461D7006FB9E3 /* AIOsGui+Private.h */,
+				2046E085218461D7006FB9E3 /* AIOsGui+Private.mm */,
+				2046E07F218461BF006FB9E3 /* AIVoidResult.h */,
+				2046E080218461BF006FB9E3 /* AIVoidResult+Private.h */,
+				2046E081218461BF006FB9E3 /* AIVoidResult+Private.mm */,
+				20DE0C10214D55E900F90AA1 /* AIBoolResult.h */,
+				20DE0C05214D55E600F90AA1 /* AIBoolResult+Private.h */,
+				20DE0BFD214D55E500F90AA1 /* AIBoolResult+Private.mm */,
+				20DE0C13214D55E900F90AA1 /* AIDirectoriesDetail.h */,
+				20DE0C01214D55E500F90AA1 /* AIDirectoriesDetail.mm */,
+				20DE0C08214D55E700F90AA1 /* AIDirectoriesDetail+Private.h */,
+				20DE0BF2214D55E300F90AA1 /* AIDirectoriesDetail+Private.mm */,
+				20DE0C06214D55E600F90AA1 /* AIDirectoryView.h */,
+				20DE0BED214D55E200F90AA1 /* AIDirectoryView+Private.h */,
+				20DE0BFF214D55E500F90AA1 /* AIDirectoryView+Private.mm */,
+				20DE0BEC214D55E200F90AA1 /* AIFilesDetail.h */,
+				20DE0BEE214D55E200F90AA1 /* AIFilesDetail.mm */,
+				20DE0C09214D55E700F90AA1 /* AIFilesDetail+Private.h */,
+				20DE0BEF214D55E200F90AA1 /* AIFilesDetail+Private.mm */,
+				20DE0C04214D55E600F90AA1 /* AIFileState.h */,
+				20DE0C0A214D55E700F90AA1 /* AIFileState+Private.h */,
+				20DE0BE7214D55E200F90AA1 /* AIFileType.h */,
+				20DE0C0B214D55E800F90AA1 /* AIFileType+Private.h */,
+				20DE0C0C214D55E800F90AA1 /* AIHeader.h */,
+				20DE0C02214D55E600F90AA1 /* AIHeader.mm */,
+				20DE0C11214D55E900F90AA1 /* AIHeader+Private.h */,
+				20DE0BFE214D55E500F90AA1 /* AIHeader+Private.mm */,
+				20DE0BF4214D55E300F90AA1 /* AIHttpProgressResult.h */,
+				20DE0BEB214D55E200F90AA1 /* AIHttpProgressResult+Private.h */,
+				20DE0BF3214D55E300F90AA1 /* AIHttpProgressResult+Private.mm */,
+				20DE0C0E214D55E800F90AA1 /* AIHttpResult.h */,
+				20DE0C12214D55E900F90AA1 /* AIHttpResult+Private.h */,
+				20DE0C0F214D55E900F90AA1 /* AIHttpResult+Private.mm */,
+				20DE0BF6214D55E300F90AA1 /* AIHttpVerb.h */,
+				20DE0BE3214D55E100F90AA1 /* AIHttpVerb+Private.h */,
+				20DE0BEA214D55E200F90AA1 /* AILongResult.h */,
+				20DE0BF8214D55E400F90AA1 /* AILongResult+Private.h */,
+				20DE0C07214D55E700F90AA1 /* AILongResult+Private.mm */,
+				20DE0BE8214D55E200F90AA1 /* AIOsIo.h */,
+				20DE0BF7214D55E400F90AA1 /* AIOsIo+Private.h */,
+				20DE0BF9214D55E400F90AA1 /* AIOsIo+Private.mm */,
+				20DE0C00214D55E500F90AA1 /* AIPortal.h */,
+				20DE0C03214D55E600F90AA1 /* AIPortal+Private.h */,
+				20DE0BF0214D55E300F90AA1 /* AIPortal+Private.mm */,
+				20DE0BE6214D55E200F90AA1 /* AIProgress.h */,
+				20DE0BE4214D55E100F90AA1 /* AIProgress.mm */,
+				20DE0C0D214D55E800F90AA1 /* AIProgress+Private.h */,
+				20DE0BF1214D55E300F90AA1 /* AIProgress+Private.mm */,
+				20DE0BF5214D55E300F90AA1 /* AITask.h */,
+				20DE0BFC214D55E400F90AA1 /* AITask+Private.h */,
+				20DE0BFB214D55E400F90AA1 /* AITask+Private.mm */,
+				20DE0BE5214D55E100F90AA1 /* AIWorker.h */,
+				20DE0BE9214D55E200F90AA1 /* AIWorker+Private.h */,
+				20DE0BFA214D55E400F90AA1 /* AIWorker+Private.mm */,
+			);
+			name = Bridge;
+			path = ../../../../src/bridge/objc;
+			sourceTree = "<group>";
+		};
+		20DE0C25214D564000F90AA1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2072C5F522A3CA2F00D72B71 /* model */,
+				2072C5ED22A3C61400D72B71 /* ui */,
+				205EA82E21D65A4A008BBE32 /* gui */,
+				20DE0C2D214D56BA00F90AA1 /* platform */,
+				20DE0C2A214D569900F90AA1 /* openstack */,
+				20CF637722AE0396002AE7BD /* general.h */,
+				2004D4F822BF709A0057D8B4 /* zz_algorithms.h */,
+				20DFC9E022BE779800F084ED /* bridge.h */,
+				20E619A8220149B0007B117C /* caching_engine.h */,
+				20DE0C27214D569600F90AA1 /* caching_engine.cpp */,
+				20E34F042202B2F3000B53CD /* directory.h */,
+				20DE0C26214D569600F90AA1 /* directory.cpp */,
+			);
+			name = Core;
+			path = ../../../../src;
+			sourceTree = "<group>";
+		};
+		20DE0C2A214D569900F90AA1 /* openstack */ = {
+			isa = PBXGroup;
+			children = (
+				20DE0C2B214D56B200F90AA1 /* openstack.cpp */,
+			);
+			path = openstack;
+			sourceTree = "<group>";
+		};
+		20DE0C2D214D56BA00F90AA1 /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				2091F23F22D9DA51007335CF /* device_platform.h */,
+				20FF7CD122AEDABA004C4C8C /* content.h */,
+				20FF7CD222AEDB77004C4C8C /* content.cpp */,
+				20E34F032202AE5F000B53CD /* portal.h */,
+				20E34F022202AD0A000B53CD /* plat.h */,
+				20DE0C2E214D56E500F90AA1 /* portal.cpp */,
+				20DE0C2F214D56E500F90AA1 /* std_plat.cpp */,
+				202D3E9D22B83AE9007C5828 /* blomp_session.h */,
+				202D3E9E22B83C87007C5828 /* blomp_session.cpp */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		20E43CE122AD4E2D00A0361E /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				20E43CE222AD4E6D00A0361E /* folder_subviewmodel.h */,
+				20D7C62122B20846004F5254 /* rename_file_subviewmodel.h */,
+				20CD818322B54C0E0065613A /* preview_viewmodel.h */,
+				202D3E9722B7BE00007C5828 /* create_folder_viewmodel.h */,
+				202D3E9822B7ED51007C5828 /* rename_folder_viewmodel.h */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		20EBF947212AFC55007F92DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20DB5046227B64D200BEA8B0 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		203A52292117519C00893D6A /* CloudStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 203A52312117519C00893D6A /* Build configuration list for PBXNativeTarget "CloudStore" */;
+			buildPhases = (
+				203A52262117519C00893D6A /* Sources */,
+				203A52272117519C00893D6A /* Frameworks */,
+				203A52282117519C00893D6A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudStore;
+			productName = CloudStore;
+			productReference = 203A522A2117519C00893D6A /* CloudStore */;
+			productType = "com.apple.product-type.tool";
+		};
+		203A523B211754D200893D6A /* CloudStoreMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 203A524F211754D200893D6A /* Build configuration list for PBXNativeTarget "CloudStoreMobile" */;
+			buildPhases = (
+				203A5238211754D200893D6A /* Sources */,
+				203A5239211754D200893D6A /* Frameworks */,
+				203A523A211754D200893D6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudStoreMobile;
+			productName = CloudStoreMobile;
+			productReference = 203A523C211754D200893D6A /* CloudStoreMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		203A52222117519C00893D6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = AiNET;
+				TargetAttributes = {
+					203A52292117519C00893D6A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					203A523B211754D200893D6A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 203A52252117519C00893D6A /* Build configuration list for PBXProject "CloudStore" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 203A52212117519C00893D6A;
+			productRefGroup = 203A522B2117519C00893D6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				203A52292117519C00893D6A /* CloudStore */,
+				203A523B211754D200893D6A /* CloudStoreMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		203A523A211754D200893D6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C9BD3022630EAB0086183C /* IQAudioPickerController.xcassets in Resources */,
+				203A524B211754D200893D6A /* LaunchScreen.storyboard in Resources */,
+				203A5248211754D200893D6A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		203A52262117519C00893D6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		203A5238211754D200893D6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C9BD3C22630EAB0086183C /* IQAudioPickerUtility.m in Sources */,
+				203D38F122A2A3CF000AF408 /* AIImage.m in Sources */,
+				20F2E7CA21C91315003A2986 /* AIStringsResult+Private.mm in Sources */,
+				203D38F222A2A3CF000AF408 /* AIBaseForm.m in Sources */,
+				2014245622B3F6BB00920278 /* AIFormViewmodel+Private.mm in Sources */,
+				20C9BD3322630EAB0086183C /* IQSongsListViewController.m in Sources */,
+				2013440C2247A0C20032C70E /* BCCKeychain.m in Sources */,
+				2024D63222A29AD80041FEF8 /* AIBlock+Private.mm in Sources */,
+				20AC50AE21D76FE70056C424 /* AIFileCollectionViewCell.m in Sources */,
+				20DE0C15214D55EA00F90AA1 /* AIFilesDetail.mm in Sources */,
+				203DFCF322B6573600CAB3C7 /* AIStateChange+Private.mm in Sources */,
+				20C9BD4122630EAB0086183C /* IQAssetsCell.m in Sources */,
+				2046E08E218461D9006FB9E3 /* AIOsGui+Private.mm in Sources */,
+				20C9BD4322630EAB0086183C /* UIImage+IQMediaPickerController.m in Sources */,
+				20F2E7C621C91302003A2986 /* AICancellationToken+Private.mm in Sources */,
+				20D13CC32280AFEE007F440F /* AITransactionObserver.m in Sources */,
+				203D38FE22A2A3CF000AF408 /* AIPhoneFormController.m in Sources */,
+				20C9BD3222630EAB0086183C /* IQSongsGenreViewController.m in Sources */,
+				203D38D222A2A3B7000AF408 /* AIPicker.m in Sources */,
+				20DE0BB5214D551A00F90AA1 /* AIUploadContext.m in Sources */,
+				20DE0BDC214D556100F90AA1 /* AIInputFilenameViewController.m in Sources */,
+				20E4637722B6134800BF8B2B /* AIDiagnostic+Private.mm in Sources */,
+				20C9BD1922630EAB0086183C /* IQMediaPickerController.m in Sources */,
+				20CD818222B54A1E0065613A /* AIPreViewmodel+Private.mm in Sources */,
+				20DE0C28214D569600F90AA1 /* directory.cpp in Sources */,
+				203D38D122A2A3B7000AF408 /* AIBooleanInput.m in Sources */,
+				2024D62A22A29AD80041FEF8 /* AIReference+Private.mm in Sources */,
+				2004D50022BFB7910057D8B4 /* AITransactionDetail+Private.mm in Sources */,
+				20AC50AB21D76AFE0056C424 /* AIDirectoryList.m in Sources */,
+				202D3E9F22B83C87007C5828 /* blomp_session.cpp in Sources */,
+				203D38F722A2A3CF000AF408 /* AIMultilineButton.m in Sources */,
+				2046E08F218461D9006FB9E3 /* AIMessage.mm in Sources */,
+				20DE0BB2214D551A00F90AA1 /* AIGCDWorker.m in Sources */,
+				20C9BD3922630EAB0086183C /* IQSongsAlbumViewCell.m in Sources */,
+				203D38F922A2A3CF000AF408 /* AIStarRatingView.m in Sources */,
+				20BFCED222B4FCBB00B9C5A7 /* AIFormView+Private.mm in Sources */,
+				20DE0C14214D55EA00F90AA1 /* AIProgress.mm in Sources */,
+				2024D63322A29AD80041FEF8 /* AIGenericForm+Private.mm in Sources */,
+				20AC50B121D777940056C424 /* AIDirCollectionViewCell.m in Sources */,
+				20C9BD4222630EAB0086183C /* IQAssetsPickerController.m in Sources */,
+				2046E08D218461D9006FB9E3 /* AIOsForm+Private.mm in Sources */,
+				2024D62F22A29AD80041FEF8 /* AIStyle+Private.mm in Sources */,
+				20CD818A22B57E1C0065613A /* AIVideoController.m in Sources */,
+				2046E090218461D9006FB9E3 /* AIMessage+Private.mm in Sources */,
+				20C9BD2F22630EAB0086183C /* IQAudioPickerController.m in Sources */,
+				20DFC9EA22BEAF7A00F084ED /* AIStoreViewmodel+Private.mm in Sources */,
+				20D8ECE3218DF85E00946EBE /* AIElement.mm in Sources */,
+				20DE0C1C214D55EA00F90AA1 /* AIWorker+Private.mm in Sources */,
+				203D38D322A2A3B7000AF408 /* AIText.m in Sources */,
+				203D38D422A2A3B7000AF408 /* AIMultilineTextInput.m in Sources */,
+				20EF45C12185797800E4D64C /* AIBinaryResult+Private.mm in Sources */,
+				203DFCF222B6573600CAB3C7 /* AIStateChange.mm in Sources */,
+				203D38F822A2A3CF000AF408 /* AIConfirmController.m in Sources */,
+				20DE0C1F214D55EA00F90AA1 /* AIHeader+Private.mm in Sources */,
+				20DE0BC3214D554100F90AA1 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				20DE0C19214D55EA00F90AA1 /* AIDirectoriesDetail+Private.mm in Sources */,
+				20D8ECED218E0B7200946EBE /* AIFonts.m in Sources */,
+				201F762122A3A6140079BAEA /* AIView+Private.mm in Sources */,
+				2046E09F21846A2A006FB9E3 /* AILaunchController.m in Sources */,
+				20C9BD3A22630EAB0086183C /* IQSongsComposersViewController.m in Sources */,
+				20DE0C30214D56E500F90AA1 /* portal.cpp in Sources */,
+				2024D63122A29AD80041FEF8 /* AIField+Private.mm in Sources */,
+				20BBCF9E22492C4800D27FB6 /* AIRenameFolder.m in Sources */,
+				207F7428218F5F45001546AC /* AIButtonx.m in Sources */,
+				20DE0BB4214D551A00F90AA1 /* AIHttpContext.m in Sources */,
+				203D38F522A2A3CF000AF408 /* AIHelp.m in Sources */,
+				2004D4FF22BFB7910057D8B4 /* AITransactionDetail.mm in Sources */,
+				20DE0BD7214D556100F90AA1 /* AIFilePreviewController.m in Sources */,
+				20B1EBB422BAC4E500CF644C /* signup_subviewmodel.cpp in Sources */,
+				2024D62B22A29AD80041FEF8 /* AIStyle.mm in Sources */,
+				20DE0BB6214D551A00F90AA1 /* AIDownloadContext.m in Sources */,
+				20C9BD3F22630EAB0086183C /* IQAssetsPickerShadowView.m in Sources */,
+				20CD818D22B58B850065613A /* AITextController.m in Sources */,
+				2024D62E22A29AD80041FEF8 /* AIBlock.mm in Sources */,
+				20DE0BC2214D554100F90AA1 /* NSArray+PureLayout.m in Sources */,
+				20C9BD3622630EAB0086183C /* IQSongsPlaylistViewController.m in Sources */,
+				20D8ECE2218DF85E00946EBE /* AIElement+Private.mm in Sources */,
+				20C9BD3822630EAB0086183C /* IQSongsCell.m in Sources */,
+				205F61A022AD664400FE806B /* AIFolderController.m in Sources */,
+				20D8ECF1218E0F8C00946EBE /* AITextInputx.m in Sources */,
+				20AF38142207809500AD8F70 /* AICreateFolderScreen.m in Sources */,
+				20D8ECE7218DF87500946EBE /* AIIntResult+Private.mm in Sources */,
+				203D38FD22A2A3CF000AF408 /* AIVerticalSpace.m in Sources */,
+				20DE0BDF214D556100F90AA1 /* AIFileTableViewCell.m in Sources */,
+				20BFCED922B5076400B9C5A7 /* AIUiCallback+Private.mm in Sources */,
+				20DE0C20214D55EA00F90AA1 /* AIDirectoryView+Private.mm in Sources */,
+				2014245A22B3F6CC00920278 /* AIRootViewmodel+Private.mm in Sources */,
+				20C9BD3D22630EAB0086183C /* IQAlbumAssetsViewController.m in Sources */,
+				2014245522B3F6BB00920278 /* AIFolderViewmodel+Private.mm in Sources */,
+				20DE0C21214D55EA00F90AA1 /* AIDirectoriesDetail.mm in Sources */,
+				202D3E9C22B82524007C5828 /* user_viewmodel.cpp in Sources */,
+				20DE0C1A214D55EA00F90AA1 /* AIHttpProgressResult+Private.mm in Sources */,
+				20BFCECE22B4E05500B9C5A7 /* AIFolderView+Private.mm in Sources */,
+				203A524E211754D200893D6A /* main.mm in Sources */,
+				20DE0C17214D55EA00F90AA1 /* AIPortal+Private.mm in Sources */,
+				20395A1E22A3A9B500E4E156 /* AIViewController.m in Sources */,
+				20DE0C16214D55EA00F90AA1 /* AIFilesDetail+Private.mm in Sources */,
+				203D38F322A2A3CF000AF408 /* AIPickerController.m in Sources */,
+				20BFCEDC22B507BF00B9C5A7 /* AIUIThreadRunner.m in Sources */,
+				20C9BD2E22630EAB0086183C /* IQMediaPickerSelection.m in Sources */,
+				20C9BD3522630EAB0086183C /* IQSongsListTableHeaderView.m in Sources */,
+				20DE0C24214D55EA00F90AA1 /* AIHttpResult+Private.mm in Sources */,
+				207F7423218F3E3B001546AC /* AITextFieldx.m in Sources */,
+				208299702247E39E00B884FD /* AIRenameFile.m in Sources */,
+				203D38F422A2A3CF000AF408 /* AIBaseFormViewController.m in Sources */,
+				2045FB622118AE170047E339 /* DJIError.mm in Sources */,
+				20DE0C29214D569600F90AA1 /* caching_engine.cpp in Sources */,
+				20E94F2621C9DBAA00FB718B /* AIUrlSessionCancellationToken.m in Sources */,
+				203D701B21CA894200EBB2D3 /* AIBooleanInputx.m in Sources */,
+				20BB59B022A2AEE90025927D /* AITextInput.m in Sources */,
+				202D2AE321D5FE9800ECAE6C /* AIAccountScreen.m in Sources */,
+				20AF381022077EE600AD8F70 /* ActionResult.m in Sources */,
+				203D38CF22A2A3B7000AF408 /* AIButton.m in Sources */,
+				20C9BD3E22630EAB0086183C /* IQCheckmarkView.m in Sources */,
+				20CD817E22B5417F0065613A /* AIPhotoController.m in Sources */,
+				20D8ECEA218DFAC900946EBE /* AIFormViewController.mm in Sources */,
+				20C0DA6422A45172000C1127 /* model.cpp in Sources */,
+				20C9BD3722630EAB0086183C /* IQSongsArtistListViewController.m in Sources */,
+				20FF7CD322AEDB77004C4C8C /* content.cpp in Sources */,
+				20846724215657FD007F67C0 /* AIFilesDetailView.m in Sources */,
+				20DE0BD9214D556100F90AA1 /* AITextPreviewController.m in Sources */,
+				203D38FB22A2A3CF000AF408 /* AITextField.m in Sources */,
+				20EDC6BB22BE32640029254D /* AIProduct+Private.mm in Sources */,
+				20EDC6BC22BE32640029254D /* AIProduct.mm in Sources */,
+				20C9BD4022630EAB0086183C /* IQAssetsAlbumViewCell.m in Sources */,
+				20DE0C22214D55EA00F90AA1 /* AIHeader.mm in Sources */,
+				20DE0BB3214D551A00F90AA1 /* AIOsIoImpl.m in Sources */,
+				2046E096218461E9006FB9E3 /* AIStringResult+Private.mm in Sources */,
+				20C9BD3B22630EAB0086183C /* IQAudioPickerShadowView.m in Sources */,
+				20DE0C1E214D55EA00F90AA1 /* AIBoolResult+Private.mm in Sources */,
+				203D38CE22A2A3B7000AF408 /* AIHelpElement.m in Sources */,
+				2077D89622A99C6E00D95DE3 /* AIRootController.m in Sources */,
+				20E4637C22B61DED00BF8B2B /* AIFileItemDetail.mm in Sources */,
+				20DE0C1B214D55EA00F90AA1 /* AIOsIo+Private.mm in Sources */,
+				20E4638622B64B9900BF8B2B /* AIThumbnails.m in Sources */,
+				2072C5F422A3C7A500D72B71 /* root_viewmodel.cpp in Sources */,
+				20DE0C31214D56E500F90AA1 /* std_plat.cpp in Sources */,
+				2046E082218461C0006FB9E3 /* AIVoidResult+Private.mm in Sources */,
+				2045FB632118AE170047E339 /* DJIProxyCaches.mm in Sources */,
+				20A2188821CBAEF800C9CF48 /* AIToolbarViewController.m in Sources */,
+				20DE0BDD214D556100F90AA1 /* DirectoryNavigationViewController.m in Sources */,
+				20A4D96722A40B1300E9E1C7 /* AINavigationController.m in Sources */,
+				20DE0BDB214D556100F90AA1 /* AIPhotoPreviewController.m in Sources */,
+				20C9BD3122630EAB0086183C /* IQSongsAlbumListViewController.m in Sources */,
+				2081BA252135D37E005F9168 /* AITheme.m in Sources */,
+				20C9BD3422630EAB0086183C /* IQSongsCompilationsViewController.m in Sources */,
+				20E4638222B61DF900BF8B2B /* AIFolderItemDetail+Private.mm in Sources */,
+				20B52C1622B0B69200C3AF20 /* AIToolbarController.m in Sources */,
+				202D3EA222B854EA007C5828 /* AICertCheck.m in Sources */,
+				20DE0C1D214D55EA00F90AA1 /* AITask+Private.mm in Sources */,
+				203A5240211754D200893D6A /* AppDelegate.m in Sources */,
+				208D009E2206F86A0010ED7D /* AIVideoPreviewController.m in Sources */,
+				20DE0BC1214D554100F90AA1 /* ALView+PureLayout.m in Sources */,
+				20E4638322B61DF900BF8B2B /* AIFolderItemDetail.mm in Sources */,
+				20DE0C23214D55EA00F90AA1 /* AILongResult+Private.mm in Sources */,
+				20DE0C2C214D56B200F90AA1 /* openstack.cpp in Sources */,
+				2024D62C22A29AD80041FEF8 /* AIField.mm in Sources */,
+				20E4637D22B61DED00BF8B2B /* AIFileItemDetail+Private.mm in Sources */,
+				2024D63022A29AD80041FEF8 /* AIReference.mm in Sources */,
+				20DE0C18214D55EA00F90AA1 /* AIProgress+Private.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		203A5249211754D200893D6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				203A524A211754D200893D6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		203A522F2117519C00893D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		203A52302117519C00893D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		203A52322117519C00893D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S436AJU3AW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		203A52332117519C00893D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S436AJU3AW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		203A5250211754D200893D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudStoreMobile/CloudStoreMobile.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S436AJU3AW;
+				HEADER_SEARCH_PATHS = (
+					../../../src,
+					../../../src/bridge/cpp,
+				);
+				INFOPLIST_FILE = CloudStoreMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blomp.blomplive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = ../../..;
+			};
+			name = Debug;
+		};
+		203A5251211754D200893D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudStoreMobile/CloudStoreMobile.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S436AJU3AW;
+				HEADER_SEARCH_PATHS = (
+					../../../src,
+					../../../src/bridge/cpp,
+				);
+				INFOPLIST_FILE = CloudStoreMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blomp.blomplive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = ../../..;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		203A52252117519C00893D6A /* Build configuration list for PBXProject "CloudStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				203A522F2117519C00893D6A /* Debug */,
+				203A52302117519C00893D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		203A52312117519C00893D6A /* Build configuration list for PBXNativeTarget "CloudStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				203A52322117519C00893D6A /* Debug */,
+				203A52332117519C00893D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		203A524F211754D200893D6A /* Build configuration list for PBXNativeTarget "CloudStoreMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				203A5250211754D200893D6A /* Debug */,
+				203A5251211754D200893D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 203A52222117519C00893D6A /* Project object */;
+}

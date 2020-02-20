@@ -1,0 +1,100 @@
+windeployqt --qmldir c:\p\aos c:\p\build-qtdtapp-Desktop_Qt_5_11_1_MSVC2017_64bit-Release\release
+
+binarycreator -c config\config.xml -p packages CloudInstall.exe
+
+
+osx
+
+~/Qt/5.11.1/clang_64/bin/macdeployqt ~/p/build-qtdtapp-Desktop_Qt_5_11_1_clang_64bit-Release/qtdtapp.app
+~/Qt/Tools/QtInstallerFramework/3.0/bin/binarycreator -c config/config.xml -p packages CloudStoreInstall
+
+
+https://github.com/probonopd/linuxdeployqt
+
+
+             setObjectName(QLatin1String("FinishedPage"));
+    setColoredTitle(tr("Completing the %1 Wizard").arg(productName()));
+
+    m_msgLabel = new QLabel(this);
+    m_msgLabel->setWordWrap(true);
+    m_msgLabel->setObjectName(QLatin1String("MessageLabel"));
+
+    m_runItCheckBox = new QCheckBox(this);
+    m_runItCheckBox->setObjectName(QLatin1String("RunItCheckBox"));
+    m_runItCheckBox->setChecked(true);
+
+
+    if (installer.value("os") === "win")
+{
+component.addOperation("CreateShortcut", "@TargetDir@/YourApp.exe", "@DesktopDir@/YourApp_name.lnk");
+}
+if (installer.value("os") === "x11")
+{
+component.addOperation("CreateDesktopEntry", "/usr/share/applications/YourApp.desktop", "Version=1.0\nType=Application\nTerminal=false\nExec=@TargetDir@/YourApp.sh\nName=YourApp_name\nIcon=@TargetDir@YourApp_icon.png\nName[en_US]=YourApp_name");
+component.addElevatedOperation("Copy", "/usr/share/applications/YourApp.desktop", "@HomeDir@/Desktop/YourApp.desktop");
+}
+
+ if (systemInfo.kernelType === "winnt") {
+        if (majorVersion(systemInfo.kernelVersion) >= 6)
+            validOs = true;
+    } else if (systemInfo.kernelType === "darwin") {
+        if (majorVersion(systemInfo.kernelVersion) >= 11)
+            validOs = true;
+    } else {
+        if (systemInfo.productType !== "opensuse"
+                || systemInfo.productVersion !== "13.2") {
+            QMessageBox["warning"]("os.warning", "Installer",
+                                   "Note that the binaries are only tested on OpenSUSE 13.2.",
+                                   QMessageBox.Ok);
+        }
+        validOs = true;
+    }
+
+
+sudo ./configure -static -prefix QtNew -release -opensource -confirm-license -qt-zlib -qt-pcre -qt-libpng -qt-libjpeg -qt-xcb -opengl desktop -make libs -nomake tools -nomake examples -nomake tests
+
+
+***
+
+@echo off
+maintenancetool.exe --checkupdates > checkUpdate.txt
+
+findstr /c:"updates" checkUpdate.txt
+
+if %errorlevel% == 0 maintenancetool.exe --script=script.qs
+
+***
+
+QProcess process;
+process.start("maintenancetool --checkupdates");
+
+// Wait until the update tool is finished
+process.waitForFinished();
+
+if(process.error() != QProcess::UnknownError)
+{
+    qDebug() << "Error checking for updates";
+    return false;
+}
+
+// Read the output
+QByteArray data = process.readAllStandardOutput();
+
+// No output means no updates available
+// Note that the exit code will also be 1, but we don't use that
+// Also note that we should parse the output instead of just checking if it is empty if we want specific update info
+if(data.isEmpty())
+{
+    qDebug() << "No updates available";
+    return false;
+}
+
+// Call the maintenance tool binary
+// Note: we start it detached because this application need to close for the update
+QStringList args("--updater");
+bool success = QProcess::startDetached("maintenancetool", args);
+
+// Close the application
+qApp->closeAllWindows();
+
+***

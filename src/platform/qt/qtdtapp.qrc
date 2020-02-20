@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/">
+        <file>user.png</file>
+        <file>download.svg</file>
+        <file>upload.svg</file>
+        <file>fonts/Roboto/Roboto-Medium.ttf</file>
+        <file>fonts/Roboto/Roboto-Light.ttf</file>
+        <file>fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf</file>
+        <file>icons/ic_cloud_done_24px.svg</file>
+        <file>icons/ic_cloud_download_24px.svg</file>
+        <file>icons/ic_cloud_upload_24px.svg</file>
+        <file>icons/ic_save_24px.svg</file>
+        <file>icons/ic_delete_forever_24px.svg</file>
+        <file>icons/ic_create_new_folder_24px.svg</file>
+        <file>icons/ic_not_interested_24px.svg</file>
+        <file>icons/ic_lock_open_24px.svg</file>
+        <file>icons/ic_settings_applications_24px.svg</file>
+        <file>icons/icon.png</file>
+        <file>images/checkbox_unchecked.png</file>
+        <file>images/checkbox_unchecked_pressed.png</file>
+        <file>images/checkbox_unchecked_hover.png</file>
+        <file>images/checkbox_checked.png</file>
+        <file>images/checkbox_checked_pressed.png</file>
+        <file>images/checkbox_checked_hover.png</file>
+        <file>fonts/Nunito/Nunito-Black.ttf</file>
+        <file>fonts/Nunito/Nunito-BlackItalic.ttf</file>
+        <file>fonts/Nunito/Nunito-Bold.ttf</file>
+        <file>fonts/Nunito/Nunito-BoldItalic.ttf</file>
+        <file>fonts/Nunito/Nunito-ExtraBold.ttf</file>
+        <file>fonts/Nunito/Nunito-ExtraBoldItalic.ttf</file>
+        <file>fonts/Nunito/Nunito-ExtraLight.ttf</file>
+        <file>fonts/Nunito/Nunito-ExtraLightItalic.ttf</file>
+        <file>fonts/Nunito/Nunito-Italic.ttf</file>
+        <file>fonts/Nunito/Nunito-Light.ttf</file>
+        <file>fonts/Nunito/Nunito-LightItalic.ttf</file>
+        <file>fonts/Nunito/Nunito-Regular.ttf</file>
+        <file>fonts/Nunito/Nunito-SemiBold.ttf</file>
+        <file>fonts/Nunito/Nunito-SemiBoldItalic.ttf</file>
+        <file>style/main.css</file>
+    </qresource>
+</RCC>

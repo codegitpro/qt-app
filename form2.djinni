@@ -1,0 +1,116 @@
+weight = enum
+{
+	normal;
+	bold;
+}
+
+size = enum
+{
+	small;
+	medium;
+	large;
+	none;
+}
+
+align = enum
+{
+	left;
+	center;
+	right;
+	none;
+}
+
+colour = enum
+{
+	white;
+	light_blue;
+	dirty_blue;
+	dark_grey;
+	light_grey;
+	purple;
+	red;
+	none;
+}
+
+style = record
+{
+	size: size;
+	align: align;
+	colour: colour;	
+	weight: weight; 
+	width: i32;
+}
+
+data_type = enum
+{
+	text;
+	multiline_text;
+	boolean;
+	email;
+	password;
+	reference;
+	choice;
+	skype;
+	phone;
+	currency;
+	url;
+	integer;
+	rating;
+}
+
+field_type = enum
+{
+	input;
+	label;
+	expand;
+	back;
+	error;
+	chat;
+	console;
+	link;
+	button;
+	logo;
+	panel_break;
+	vertical_space;
+	help;
+}
+
+block = record
+{
+	row_beg: i32;
+	row_end: i32;
+	col_beg: i32;
+	col_end: i32;
+}
+
+field = record
+{
+	rect: block;
+	field_id: i32;
+	data_t: data_type;
+	field_t: field_type;
+	title: string;	
+	required: bool;
+	style: style;
+}
+
+reference = record
+{
+	name: string;
+	items: list<string>;
+}
+
+generic_form = interface +o +j
+{
+	input_get(input_id: i32): string;
+	input_set(input_id: i32, value: string);
+	input_configure(input_id: i32, config: string);
+	enable(element_id: i32, enabled: bool) : bool;
+	error(element_id: i32, message: string);
+	close();
+	validate(): bool;
+	disable_actions();
+	show_message(message: string);
+
+}
+

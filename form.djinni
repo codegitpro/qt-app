@@ -1,0 +1,29 @@
+element_type = enum
+{
+	button;
+	text_input;
+	bool_input;
+	email_input;
+	label;
+	password_input;
+	text;
+}
+
+element = record
+{
+	group: i32;
+	type: element_type;
+	input_id: i32;
+	title: string;
+	value: string;
+}
+
+os_form = interface +o +j
+{
+	action_result(outcome: status, lines: list<message>);
+	progress(position: i32, total: i32);
+	enable(group: i32);
+	disable(group: i32);
+	input(): map<i32, string>;
+}
+

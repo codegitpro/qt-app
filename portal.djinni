@@ -1,0 +1,359 @@
+@import "form.djinni"
+@import "form2.djinni"
+
+file_state = enum
+{
+	normal;
+	downloading;
+	uploading;
+	failed;
+	local;
+	deleting;
+	deleted;
+}
+
+files_detail = record
+{
+	ids: list<i32>;
+	titles: list<i32>;
+	sizes: list<i64>;
+	percentages: list<i32>;
+	states: list<file_state>;
+	thumbnails: list<binary>;
+}
+
+http_verb = enum
+{
+	get;
+	post;
+	put;
+	patch;
+	remove;
+	options;
+}
+
+task = interface +c 
+{
+    run();
+}
+
+worker = interface +o +j 
+{
+    schedule(todo: task);
+}
+void_result = interface +c
+{
+	on_result();
+}
+bool_result = interface +c
+{
+	on_result(success: bool);
+}
+long_result = interface +c
+{
+	on_result(size: i64);
+}
+int_result = interface +c
+{
+	on_result(value: i32);
+}
+string_result = interface +c
+{
+	on_result(content: string);
+}
+strings_result = interface +c
+{
+	on_result(content: list<string>);
+}
+binary_result = interface +c
+{
+	on_result(data: binary);
+}
+
+header = record
+{
+	name: string;
+	value: string;
+}
+
+http_result = interface +c
+{
+	on_result(status_code: i32, headers: list<header>, data: string);
+}
+
+progress = record
+{
+	count: i64;
+	total: i64;	
+}
+
+http_progress_result = interface +c
+{
+	on_progress(at: progress);
+	on_result(status_code: i32, headers: list<header>, content_length: i64);
+}
+
+cancellation_token = interface +o +j
+{
+	cancel();
+}
+
+file_type = enum
+{
+	image;
+	text;
+	video;
+	other;
+}
+
+log_type = enum
+{
+	lverbose;
+	ldebug;
+	linfo;
+	lwarning;
+	lerror;	
+}
+
+os_io = interface +o +j
+{
+	log(type: log_type, line:i32, file:string, message: string);
+	log_lines(type: log_type, line:i32, file:string, messages: list<string>);
+	file_readall(path: string, result: binary_result);
+	file_writeall(path: string, content: binary, result: bool_result);
+	file_writeall_safely(path: string, content: binary, result: bool_result);
+	file_write_password(username: string, password: string, result: bool_result);
+	file_read_password(username: string, result: string_result);
+	file_size(path: string, result: long_result);
+	file_thumbnail(path: string, type: file_type, result: binary_result) : bool;
+	copy_file(current_path: string, new_path: string, result: bool_result);
+	make_path(path: string, result: bool_result);
+	rename_file(current_path: string, new_path: string, result: bool_result);
+	http_request(verb: http_verb, url: string, headers: list<header>, body: string, result: http_result) : cancellation_token;
+	http_upload_file(verb: http_verb, url: string, file_path: string, headers: list<header>, result: http_progress_result) : cancellation_token;
+	http_download_file(url: string, file_path: string, headers: list<header>, size: i64, md5: string, result: http_progress_result) : cancellation_token;
+	wait(millis: i32, result: void_result);
+	file_expand_directories(paths: list<string>, result: strings_result);
+	file_copy_hierarchy(dest_root_path: string, dest_relative_paths: list<string>, src_paths: list<string>);
+	file_clear_cache(username: string, result: bool_result);
+}
+
+message = record 
+{
+	field: i32;
+	content: string;
+}
+
+status = enum
+{
+	success;
+	fail;
+	partial_success;
+}
+
+directories_detail = record 
+{
+	ids: list<i32>;
+	titles: list<i32>;
+}
+
+directory_view = interface +o +j
+{
+	refresh_list(folder_path: list<i32>, dirs: directories_detail, files: files_detail, new_directory_names: list<string>, new_file_names: list<string>);	
+	file_states_changed(folder_path: list<i32>, file_ids: list<i32>, states: list<file_state>);
+	file_changed(folder_path: list<i32>, file_id: i32, file_name_id: i32, size: i64, percentage: i32, state: file_state, thumbnail: binary);
+}
+
+os_gui = interface +o +j
+{
+	show_cloudstore();
+	gui_thread(cb: void_result);
+	back();
+	open_link_in_browser(url: string);
+	create_form(title: string, start_hierarchy: bool, width: i32, height: i32, action: int_result, elements: list<element>) : os_form;
+	show_message(message: string);
+	preview(type: file_type, path: string, file_id: i32, file_name: string);
+	reset();
+}
+
+portal = interface +c
+{
+	static create(w: worker, app_data_location: string, thumb_px: i32, io: os_io, gui: os_gui, type: screen_type): portal;
+
+	create_folder(parent_folder_id: i32, folder_name: string, form: os_form);
+	rename_folder(folder_id: i32, new_name: string, form: os_form);
+	rename_file(file_id: i32, new_name: string, form: os_form);
+
+
+	ping(): string;
+	watch_directory(id: i32, view: directory_view);
+	unwatch_directory(id: i32);
+
+	download_all(folder_ids: list<i32>, file_ids: list<i32>);
+	save_all(target_folder: string, folder_ids: list<i32>, file_ids: list<i32>);
+	delete_all(folder_ids: list<i32>, file_ids: list<i32>);
+	upload_all(target_folder_id: i32, common_folder: string, relative_file_paths: list<string>);
+	upload_files_only(target_folder_id: i32, filenames: list<string>, paths: list<string>, thumbnails: list<binary>);
+
+	preview(file_id: i32);
+	
+	clear_cache();
+	cancel_network_operations();
+	sign_out();
+	about();
+}
+
+diagnostic = interface +o +j
+{
+	log(type: log_type, line:i32, file:string, message: string);
+	log_lines(type: log_type, line:i32, file:string, messages: list<string>);
+}
+
+root_viewmodel = interface +c
+{
+	static create(scheduler: worker, app_data_location: string, thumb_px: i32, io: os_io, view: view, type: screen_type, callback: ui_callback, logger: diagnostic): root_viewmodel;
+}
+
+form_view = interface +o +j
+{
+	replace_form(vm: form_viewmodel);
+	push_form(vm: form_viewmodel);
+	set_screen_name(title: string);	
+}
+
+form_viewmodel = interface +c
+{
+	action(element_id: i32);
+	back();
+	fields(): list<field>;
+	on_load(view: form_view, form: generic_form);
+	hide_navigation(): bool;
+	holdon_to_vm(): bool;
+}
+
+pre_viewmodel = interface +c
+{
+	file_delete();
+}
+
+file_item_detail = record
+{
+	item_id: i32;
+	state: file_state;
+	selected: bool;
+	title: string;
+	detail: string;
+}
+
+folder_item_detail = record
+{
+	item_id: i32;
+	selected: bool;	
+	title: string;
+}
+
+state_change = record
+{
+	index: i32;
+	state: file_state;
+}
+
+folder_view = interface +o +j
+{
+	create_folder_view(folder_vm: folder_viewmodel, form_vm: form_viewmodel);
+	create_photo_preview(vm: pre_viewmodel, file_name: string, file_path: string);
+	create_video_preview(vm: pre_viewmodel, file_name: string, file_path: string);
+	create_text_preview(vm: pre_viewmodel, file_name: string, file_path: string);
+	reload(section: i32, row: i32);
+
+	on_reset(folders: list<folder_item_detail>, files: list<file_item_detail>);	
+	on_file_states_change(state_changes: list<state_change>);
+	on_file_remove(row: i32);
+	on_folder_remove(row: i32);
+	on_file_detail_change(row: i32, detail: string);
+	on_clear_selection(folder_indexes: list<i32>, file_indexes: list<i32>);
+	on_file_change(row: i32, item: file_item_detail);
+	on_folder_change(row: i32, item: folder_item_detail);
+	on_select_all();
+	on_file_select(row: i32, selected: bool);
+	on_folder_select(row: i32, selected: bool);
+	on_file_added(row: i32, item: file_item_detail);
+	on_folder_added(row: i32, item: folder_item_detail);
+}
+
+folder_viewmodel = interface +c
+{
+	on_load(view: folder_view);
+	folder_id(): i32;
+	list_thumbnail_content(row: i32): binary;
+	list_selected(section: i32, row: i32): bool;
+	list_action(section: i32, row: i32, sub_index: i32);
+	upload_file_only(filename: string, path: string, thumbnail: binary);
+	upload_files_only(filenames: list<string>, paths: list<string>, thumbnails: list<binary>);
+}
+
+screen_type = enum
+{
+	desktop;
+	phone;
+	tablet;
+}
+
+ui_callback = interface +o +j
+{
+	gui_thread(cb: void_result);
+}
+
+product = record
+{
+	product_id : string;
+	title: string;
+	product_description: string;
+	price: f32;
+	formatted_price: string;
+}
+
+transaction_state = enum 
+{
+    error;
+    busy;
+    purchased;
+    restored;
+    verify_blomp;
+}
+
+transaction_detail = record
+{
+    state: transaction_state;
+    error_message: string;
+}
+
+store_viewmodel = interface +c
+{
+	on_transaction_states(states: map<string, transaction_detail>);
+	on_products(products: list<product>);
+	on_restore_fail(error_message: string);
+	on_restore_finished();
+}
+
+view = interface +o +j
+{
+	create_main_menu(root_form_vm: form_viewmodel, root_folder_vm: folder_viewmodel, user_vm: form_viewmodel, plan_vm: form_viewmodel, settings_vm: form_viewmodel);	
+	select_menu(index: i32);
+	show_menu(visible: bool);
+	send_invite();
+	push_form(vm: form_viewmodel);
+	replace_form(vm: form_viewmodel);
+
+	copy_to_clipboard(content: string);
+	open_link_in_browser(url: string);
+
+	register_store_vm(vm: store_viewmodel);
+	is_authorized_for_payments(): bool;
+	fetch_products(product_ids: list<string>);
+	subscription_purchase(email: string, product_id: string);
+	subscription_restore(email: string);
+	subscription_cancel(product_id: string);
+	subscription_receipt(product_id: string): string;
+	subscription_manage();
+}

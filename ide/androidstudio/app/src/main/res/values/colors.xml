@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffD7EDFF</color>
+    <color name="colorPrimaryDark">#ff4AAEFF</color>
+    <color name="colorAccent">#ff9843D2</color>
+    <color name="colorError">#ff0000</color>
+    <color name="text_color_primary">#ff030303</color>
+    <color name="transparent">#80000000</color>
+    <color name="groen">#00ff00</color>
+    <color name="spacer">#f0f0f0</color>
+    <color name="colorBackground">#ffffff</color>
+    <color name="white">#ffffff</color>
+</resources>

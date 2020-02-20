@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+	<DisplayName>Blomp App</DisplayName>
+	<Description>Blomp App</Description>
+	<Version>0.5.5</Version>
+	<ReleaseDate>2018-12-27</ReleaseDate>
+	<Default>true</Default>
+	<ForcedInstallation>true</ForcedInstallation>
+	<Script>installscript.qs</Script>
+</Package>

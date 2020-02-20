@@ -1,0 +1,13 @@
+Release 0.6.4
+
+iOS
+https://www.dropbox.com/s/xk7z0wdoyal4okr/Blomp.0.6.4.ipa?dl=0
+
+1. Failed upload fixed.
+2. Thumbnails are now full size and center cropped.
+
+
+Android
+https://play.google.com/apps/testing/net.ai.tmp.cloudstore
+
+1. Upload non-media files fixed. When previewing a non-media file, a message displays prompting the user to save the file to the documents folder.

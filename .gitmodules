@@ -1,0 +1,6 @@
+[submodule "deps/djinni"]
+	path = deps/djinni
+	url = https://github.com/dropbox/djinni.git
+[submodule "deps/stb"]
+	path = deps/stb
+	url = https://github.com/nothings/stb.git

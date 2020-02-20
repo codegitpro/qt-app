@@ -1,0 +1,168 @@
+*
+{
+    background-color: transparent;
+}
+
+QAction
+{
+    background-color: transparent;
+}
+
+QIcon
+{
+    background-color: transparent;
+}
+
+QToolBar
+{
+    background-color: white;
+}
+
+QToolButton
+{
+    background-color: transparent;
+}
+
+QToolButton:hover
+{
+    background-color: white;
+}
+
+QToolTip
+{
+    background-color: white;
+}
+
+QTabBar
+{
+    background-color: white;
+    qproperty-drawBase:0;
+}
+
+#main
+{
+    background-color: white;
+}
+
+QStatusBar
+{
+    background-color: white;
+}
+
+QDialog
+{
+    padding: 50pt;
+    background-color: white;
+}
+
+QTreeView
+{
+    background-color: white;
+}
+
+QLabel
+{
+    color: #9843D2;
+    font-size: 14pt;
+}
+
+QLineEdit
+{
+    font-family: Nunito;
+    background-color: #D7EDFF;
+    border: 1px solid #D7EDFF;
+    border-radius: 20px;
+    font-size: 10pt;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+QCheckBox
+{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    spacing: 5px;
+}
+
+QCheckBox::indicator 
+{
+    width: 13px;
+    height: 13px;
+}
+
+QCheckBox::indicator:unchecked 
+{
+    image: url(:/images/checkbox_unchecked.png);
+}
+
+QCheckBox::indicator:unchecked:hover 
+{
+    image: url(:/images/checkbox_unchecked_hover.png);
+}
+
+QCheckBox::indicator:unchecked:pressed {
+    image: url(:/images/checkbox_unchecked_pressed.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/images/checkbox_checked.png);
+}
+
+QCheckBox::indicator:checked:hover {
+    image: url(:/images/checkbox_checked_hover.png);
+}
+
+QCheckBox::indicator:checked:pressed {
+    image: url(:/images/checkbox_checked_pressed.png);
+}
+
+QPushButton
+{
+    font-family: Nunito;
+    color: white;
+    background-color: #7CABC9;
+    border: 1px solid #7CABC9;
+    border-radius: 20px;
+    font-size: 10pt;
+    padding: 10px;
+    margin: 10px;
+}
+
+QLineEdit:focus
+{
+    outline: none;
+}
+
+QPushButton#quit
+{
+    border: 1px solid red;
+}
+
+QPushButton:hover
+{
+    background-color: #253236;
+    border: 1px solid #253236;
+}
+
+QPushButton:pressed
+{
+    background-color: #7CABC9;
+    border: 1px solid #7CABC9;
+}
+
+QMenu
+{
+	background-color: white;
+}
+
+QMenu::item:selected
+{
+	background-color:#7CABC9;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+	<Name>Blomp</Name>
+	<Version>0.5.1</Version>
+	<Title>Blomp Installer</Title>
+	<Publisher>AiNET</Publisher>
+	<ProductUrl>https://www.blomp.com/</ProductUrl>
+	<InstallerWindowIcon>installericon</InstallerWindowIcon>
+    <InstallerApplicationIcon>installericon</InstallerApplicationIcon>
+    <Banner>banner.png</Banner>
+    <WizardStyle>Modern</WizardStyle>
+
+    <RunProgram>@TargetDir@/qtdtapp</RunProgram>
+    <RunProgramDescription>Blomp</RunProgramDescription>
+	<StartMenuDir>Blomp</StartMenuDir>
+	<TargetDir>@ApplicationsDirX64@/Blomp</TargetDir>
+
+	<RemoteRepositories>
+		<Repository>
+			<Url>https://download.blomp.com/BlompLive/windows/repository</Url>
+			<Enabled>1</Enabled>
+			<DisplayName>Blomp Development Repository</DisplayName>
+		</Repository>
+	</RemoteRepositories>
+
+	<MaintenanceToolName>BlompUpdate</MaintenanceToolName>
+
+</Installer>
